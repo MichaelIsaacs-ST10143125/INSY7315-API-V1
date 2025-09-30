@@ -1,0 +1,6 @@
+@NewDawnPropertiesApi_V1_HostAddress = http://localhost:5108
+
+GET {{NewDawnPropertiesApi_V1_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
