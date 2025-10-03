@@ -7,6 +7,6 @@ namespace NewDawnPropertiesApi_V1.Controllers
     [Route("api/[controller]")]
     public class PropertiesController : BaseFirestoreController<PropertyModel>
     {
-        public PropertiesController(FirestoreDb firestore) : base(firestore, "Properties") { }
+        public PropertiesController(FirestoreDb firestore) : base(firestore, "properties") { }
     }
 }

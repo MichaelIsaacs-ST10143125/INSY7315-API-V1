@@ -2,33 +2,25 @@
 
 namespace NewDawnPropertiesApi_V1.Models
 {
+    [FirestoreData]
     public class PropertyModel
     {
         [FirestoreDocumentId]
         public string? Id { get; set; }
 
-        [FirestoreProperty]
-        public string? PropName { get; set; }
+        [FirestoreProperty("name")]
+        public string Name { get; set; } = null!;
 
-        [FirestoreProperty]
-        public string ListPrice { get; set; } = null!;
-
-        [FirestoreProperty]
+        [FirestoreProperty("address")]
         public string Address { get; set; } = null!;
 
-        [FirestoreProperty]
-        public string City { get; set; } = null!;
+        [FirestoreProperty("amenities")]
+        public List<string>? Amenities { get; set; }
 
-        [FirestoreProperty]
-        public string UserID { get; set; } = null!; // Firestore uses string doc IDs
+        [FirestoreProperty("status")]
+        public string Status { get; set; } = null!;
 
-        [FirestoreProperty]
-        public int RoomsCount { get; set; }
-
-        [FirestoreProperty]
-        public string? ListImageBase64 { get; set; } // store as base64 (or use Firebase Storage)
-
-        [FirestoreProperty]
-        public string? ListVideoBase64 { get; set; }
+        [FirestoreProperty("createdAt")]
+        public Timestamp? CreatedAt { get; set; }
     }
 }

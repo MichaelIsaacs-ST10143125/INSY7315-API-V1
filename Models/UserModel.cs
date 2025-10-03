@@ -3,30 +3,37 @@ using System.ComponentModel.DataAnnotations;
 
 namespace NewDawnPropertiesApi_V1.Models
 {
+    [FirestoreData] // 🔹 Make sure this is here
     public class UserModel
     {
         [FirestoreDocumentId]
         public string? Id { get; set; }
 
-        [FirestoreProperty]
-        public string UserName { get; set; } = null!;
+        [FirestoreProperty("email")]
+        public string? Email { get; set; }
 
-        [FirestoreProperty]
-        public string Password { get; set; } = null!;
+        [FirestoreProperty("password")]
+        public string? Password { get; set; }
 
-        [FirestoreProperty]
-        public string Email { get; set; } = null!;
-
-        [FirestoreProperty]
+        [FirestoreProperty("phoneNumber")]
         public string? PhoneNumber { get; set; }
 
-        [FirestoreProperty]
-        public string Role { get; set; } = null!;
+        [FirestoreProperty("name")]
+        public string? Name { get; set; }
 
-        [FirestoreProperty]
-        public string FName { get; set; } = null!;
+        [FirestoreProperty("located")]
+        public string? Located { get; set; }
 
-        [FirestoreProperty]
-        public string SName { get; set; } = null!;
+        [FirestoreProperty("status")]
+        public string? Status { get; set; }
+
+        [FirestoreProperty("userType")]
+        public string? UserType { get; set; }
+
+        [FirestoreProperty("preferences")]
+        public Dictionary<string, object>? Preferences { get; set; }
+
+        [FirestoreProperty("createdAt")]
+        public Timestamp? CreatedAt { get; set; }
     }
 }
