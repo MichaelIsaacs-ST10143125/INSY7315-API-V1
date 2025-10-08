@@ -3,7 +3,6 @@ using Google.Cloud.Firestore;
 using Google.Cloud.Firestore.V1;
 using Grpc.Auth;
 using System;
-using System.IO;
 
 namespace NewDawnPropertiesApi_V1.Services
 {
@@ -13,37 +12,32 @@ namespace NewDawnPropertiesApi_V1.Services
 
         public FirestoreService(IConfiguration config)
         {
+            // Get Firebase project ID from configuration
             string projectId = config["Firebase:ProjectId"];
-            GoogleCredential credential;
 
-            // First, try to get credentials from environment variable (Render)
+            // Get Firebase credentials JSON from environment variable
             var firebaseJson = Environment.GetEnvironmentVariable("FIREBASE_CONFIG");
-            if (!string.IsNullOrEmpty(firebaseJson))
-            {
-                credential = GoogleCredential.FromJson(firebaseJson);
-                Console.WriteLine("✅ Using FIREBASE_CONFIG from environment variable.");
-            }
-            else
-            {
-                // Fallback for local development
-                var localPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "firebase-key.json");
-                if (!File.Exists(localPath))
-                    throw new FileNotFoundException(
-                        "Firebase credentials not found. Please add firebase-key.json or set FIREBASE_CONFIG environment variable.");
 
-                credential = GoogleCredential.FromFile(localPath);
-                Console.WriteLine("✅ Using local firebase-key.json file.");
+            if (string.IsNullOrEmpty(firebaseJson))
+            {
+                throw new InvalidOperationException(
+                    "FIREBASE_CONFIG environment variable is not set. " +
+                    "Please add your Firebase service account JSON as an environment variable.");
             }
 
-            // Convert credentials to gRPC channel credentials
+            // Create GoogleCredential from JSON
+            var credential = GoogleCredential.FromJson(firebaseJson);
+
+            // Convert to gRPC channel credentials
             var channelCredentials = credential.ToChannelCredentials();
 
-            // Create FirestoreClient and pass to FirestoreDb
+            // Build FirestoreClient using the credentials
             var client = new FirestoreClientBuilder
             {
                 ChannelCredentials = channelCredentials
             }.Build();
 
+            // Initialize FirestoreDb with client
             _db = FirestoreDb.Create(projectId, client);
 
             Console.WriteLine("✅ Connected to Firestore successfully.");

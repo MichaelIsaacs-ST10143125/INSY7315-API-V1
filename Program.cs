@@ -1,4 +1,5 @@
-﻿using Google.Cloud.Firestore;
+﻿using NewDawnPropertiesApi_V1.Services;
+using Google.Cloud.Firestore;
 
 namespace NewDawnPropertiesApi_V1
 {
@@ -8,19 +9,8 @@ namespace NewDawnPropertiesApi_V1
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // 🔹 Load Firestore credentials from appsettings.json
-            string firebaseKeyPath = builder.Configuration["Firebase:KeyPath"];
-            if (!string.IsNullOrEmpty(firebaseKeyPath))
-            {
-                Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", firebaseKeyPath);
-            }
-
-            // 🔹 Register FirestoreDb as a singleton
-            builder.Services.AddSingleton(provider =>
-            {
-                var projectId = builder.Configuration["Firebase:ProjectId"];
-                return FirestoreDb.Create(projectId);
-            });
+            // 🔹 Register FirestoreService as a singleton
+            builder.Services.AddSingleton<FirestoreService>();
 
             // Add controllers + Swagger
             builder.Services.AddControllers();
@@ -36,7 +26,9 @@ namespace NewDawnPropertiesApi_V1
                 app.UseSwaggerUI();
             }
 
-            app.UseHttpsRedirection();
+            // 🔹 Disable HTTPS redirection on Render (optional)
+            // app.UseHttpsRedirection(); // Commented out for container deployments
+
             app.UseAuthorization();
             app.MapControllers();
 
