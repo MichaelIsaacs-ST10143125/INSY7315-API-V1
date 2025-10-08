@@ -3,12 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\dilan\\source\\repos\\PROG7314-Part2\\INSY7315-API-V1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|c:\\users\\dilan\\source\\repos\\prog7314-part2\\insy7315-api-v1\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|c:\\users\\dilan\\source\\repos\\prog7314-part2\\insy7315-api-v1\\controllers\\unitscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|solutionrelative:controllers\\unitscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|c:\\users\\dilan\\source\\repos\\prog7314-part2\\insy7315-api-v1\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|c:\\users\\dilan\\source\\repos\\prog7314-part2\\insy7315-api-v1\\controllers\\tenantassignmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|solutionrelative:controllers\\tenantassignmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|c:\\users\\dilan\\source\\repos\\prog7314-part2\\insy7315-api-v1\\controllers\\roomscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|solutionrelative:controllers\\roomscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|c:\\users\\dilan\\source\\repos\\prog7314-part2\\insy7315-api-v1\\controllers\\propertiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|solutionrelative:controllers\\propertiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|c:\\users\\dilan\\source\\repos\\prog7314-part2\\insy7315-api-v1\\controllers\\caretakerassignmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|solutionrelative:controllers\\caretakerassignmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|c:\\users\\dilan\\source\\repos\\prog7314-part2\\insy7315-api-v1\\controllers\\basefirestorecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|solutionrelative:controllers\\basefirestorecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|c:\\users\\dilan\\source\\repos\\prog7314-part2\\insy7315-api-v1\\services\\firestoreservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|solutionrelative:services\\firestoreservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|c:\\users\\dilan\\source\\repos\\prog7314-part2\\insy7315-api-v1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|c:\\users\\dilan\\source\\repos\\prog7314-part2\\insy7315-api-v1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|c:\\users\\dilan\\source\\repos\\prog7314-part2\\insy7315-api-v1\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,8 +54,60 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TenantAssignmentController.cs",
+              "DocumentMoniker": "C:\\Users\\dilan\\source\\repos\\PROG7314-Part2\\INSY7315-API-V1\\Controllers\\TenantAssignmentController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TenantAssignmentController.cs",
+              "ToolTip": "C:\\Users\\dilan\\source\\repos\\PROG7314-Part2\\INSY7315-API-V1\\Controllers\\TenantAssignmentController.cs",
+              "RelativeToolTip": "Controllers\\TenantAssignmentController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-08T12:40:10.862Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RoomsController.cs",
+              "DocumentMoniker": "C:\\Users\\dilan\\source\\repos\\PROG7314-Part2\\INSY7315-API-V1\\Controllers\\RoomsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RoomsController.cs",
+              "ToolTip": "C:\\Users\\dilan\\source\\repos\\PROG7314-Part2\\INSY7315-API-V1\\Controllers\\RoomsController.cs",
+              "RelativeToolTip": "Controllers\\RoomsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-08T12:40:04.205Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PropertiesController.cs",
+              "DocumentMoniker": "C:\\Users\\dilan\\source\\repos\\PROG7314-Part2\\INSY7315-API-V1\\Controllers\\PropertiesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PropertiesController.cs",
+              "ToolTip": "C:\\Users\\dilan\\source\\repos\\PROG7314-Part2\\INSY7315-API-V1\\Controllers\\PropertiesController.cs",
+              "RelativeToolTip": "Controllers\\PropertiesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-08T12:39:55.55Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CaretakerAssignmentsController.cs",
+              "DocumentMoniker": "C:\\Users\\dilan\\source\\repos\\PROG7314-Part2\\INSY7315-API-V1\\Controllers\\CaretakerAssignmentsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CaretakerAssignmentsController.cs",
+              "ToolTip": "C:\\Users\\dilan\\source\\repos\\PROG7314-Part2\\INSY7315-API-V1\\Controllers\\CaretakerAssignmentsController.cs",
+              "RelativeToolTip": "Controllers\\CaretakerAssignmentsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-08T12:37:19.346Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:2:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
@@ -30,20 +118,83 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UnitsController.cs",
+              "DocumentMoniker": "C:\\Users\\dilan\\source\\repos\\PROG7314-Part2\\INSY7315-API-V1\\Controllers\\UnitsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UnitsController.cs",
+              "ToolTip": "C:\\Users\\dilan\\source\\repos\\PROG7314-Part2\\INSY7315-API-V1\\Controllers\\UnitsController.cs",
+              "RelativeToolTip": "Controllers\\UnitsController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAkwCoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-08T12:33:17.272Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\dilan\\source\\repos\\PROG7314-Part2\\INSY7315-API-V1\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\dilan\\source\\repos\\PROG7314-Part2\\INSY7315-API-V1\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Controllers\\UsersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-08T12:40:18.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BaseFirestoreController.cs",
+              "DocumentMoniker": "C:\\Users\\dilan\\source\\repos\\PROG7314-Part2\\INSY7315-API-V1\\Controllers\\BaseFirestoreController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BaseFirestoreController.cs",
+              "ToolTip": "C:\\Users\\dilan\\source\\repos\\PROG7314-Part2\\INSY7315-API-V1\\Controllers\\BaseFirestoreController.cs",
+              "RelativeToolTip": "Controllers\\BaseFirestoreController.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAkwDoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-08T12:25:42.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\dilan\\source\\repos\\PROG7314-Part2\\INSY7315-API-V1\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\dilan\\source\\repos\\PROG7314-Part2\\INSY7315-API-V1\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAWwBsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-08T12:09:41.759Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\dilan\\source\\repos\\PROG7314-Part2\\INSY7315-API-V1\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\dilan\\source\\repos\\PROG7314-Part2\\INSY7315-API-V1\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-08T12:07:22.65Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "FirestoreService.cs",
               "DocumentMoniker": "C:\\Users\\dilan\\source\\repos\\PROG7314-Part2\\INSY7315-API-V1\\Services\\FirestoreService.cs",
               "RelativeDocumentMoniker": "Services\\FirestoreService.cs",
               "ToolTip": "C:\\Users\\dilan\\source\\repos\\PROG7314-Part2\\INSY7315-API-V1\\Services\\FirestoreService.cs",
               "RelativeToolTip": "Services\\FirestoreService.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAmwDYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-08T11:39:17.984Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 10,
               "Title": "Dockerfile",
               "DocumentMoniker": "C:\\Users\\dilan\\source\\repos\\PROG7314-Part2\\INSY7315-API-V1\\Dockerfile",
               "RelativeDocumentMoniker": "Dockerfile",
@@ -51,8 +202,7 @@
               "RelativeToolTip": "Dockerfile",
               "ViewState": "AgIAAAwAAAAAAAAAAAAYwCMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-10-08T11:15:49.004Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-08T11:15:49.004Z"
             }
           ]
         }

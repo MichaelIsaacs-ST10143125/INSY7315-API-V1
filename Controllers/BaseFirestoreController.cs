@@ -1,5 +1,6 @@
 ﻿using Google.Cloud.Firestore;
 using Microsoft.AspNetCore.Mvc;
+using NewDawnPropertiesApi_V1.Services;
 
 namespace NewDawnPropertiesApi_V1.Controllers
 {
@@ -10,9 +11,10 @@ namespace NewDawnPropertiesApi_V1.Controllers
         private readonly FirestoreDb _firestore;
         private readonly string _collection;
 
-        public BaseFirestoreController(FirestoreDb firestore, string collection)
+        // Inject FirestoreService
+        public BaseFirestoreController(FirestoreService firestoreService, string collection)
         {
-            _firestore = firestore;
+            _firestore = firestoreService.GetDb();
             _collection = collection;
         }
 

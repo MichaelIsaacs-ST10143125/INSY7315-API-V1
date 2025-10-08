@@ -1,33 +1,31 @@
 ﻿using Google.Cloud.Firestore;
 using Microsoft.AspNetCore.Mvc;
-using NewDawnPropertiesApi_V1.Models;
+using NewDawnPropertiesApi_V1.Services;
 
 namespace NewDawnPropertiesApi_V1.Controllers
 {
     [Route("api/[controller]")]
-    public class UnitsController : Controller
+    [ApiController]
+    public class UnitsController : ControllerBase
     {
         private readonly FirestoreDb _firestore;
 
-        public UnitsController(FirestoreDb firestore)
+        public UnitsController(FirestoreService firestoreService)
         {
-            _firestore = firestore;
+            _firestore = firestoreService.GetDb();
         }
 
-        // GET api/units/{propertyId}
         [HttpGet("{propertyId}")]
         public async Task<ActionResult<IEnumerable<object>>> GetUnits(string propertyId)
         {
             var snapshot = await _firestore.Collection("properties")
-                                            .Document(propertyId)
-                                            .Collection("units")
-                                            .GetSnapshotAsync();
+                                           .Document(propertyId)
+                                           .Collection("units")
+                                           .GetSnapshotAsync();
 
-            var units = snapshot.Documents.Select(d => d.ToDictionary()).ToList();
-            return Ok(units);
+            return Ok(snapshot.Documents.Select(d => d.ToDictionary()).ToList());
         }
 
-        // GET api/units/{propertyId}/{unitId}
         [HttpGet("{propertyId}/{unitId}")]
         public async Task<ActionResult<object>> GetUnit(string propertyId, string unitId)
         {
