@@ -665,6 +665,78 @@
         }
       }
     },
+    "/api/Units/{propertyId}": {
+      "get": {
+        "tags": [
+          "Units"
+        ],
+        "parameters": [
+          {
+            "name": "propertyId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Units/{propertyId}/{unitId}": {
+      "get": {
+        "tags": [
+          "Units"
+        ],
+        "parameters": [
+          {
+            "name": "propertyId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "unitId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Users": {
       "get": {
         "tags": [
@@ -858,11 +930,7 @@
             "type": "string",
             "nullable": true
           },
-          "propName": {
-            "type": "string",
-            "nullable": true
-          },
-          "listPrice": {
+          "name": {
             "type": "string",
             "nullable": true
           },
@@ -870,25 +938,19 @@
             "type": "string",
             "nullable": true
           },
-          "city": {
+          "amenities": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "status": {
             "type": "string",
             "nullable": true
           },
-          "userID": {
-            "type": "string",
-            "nullable": true
-          },
-          "roomsCount": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "listImageBase64": {
-            "type": "string",
-            "nullable": true
-          },
-          "listVideoBase64": {
-            "type": "string",
-            "nullable": true
+          "createdAt": {
+            "$ref": "#/components/schemas/Timestamp"
           }
         },
         "additionalProperties": false
@@ -933,6 +995,10 @@
         },
         "additionalProperties": false
       },
+      "Timestamp": {
+        "type": "object",
+        "additionalProperties": false
+      },
       "UserModel": {
         "type": "object",
         "properties": {
@@ -940,7 +1006,7 @@
             "type": "string",
             "nullable": true
           },
-          "userName": {
+          "email": {
             "type": "string",
             "nullable": true
           },
@@ -948,25 +1014,33 @@
             "type": "string",
             "nullable": true
           },
-          "email": {
-            "type": "string",
-            "nullable": true
-          },
           "phoneNumber": {
             "type": "string",
             "nullable": true
           },
-          "role": {
+          "name": {
             "type": "string",
             "nullable": true
           },
-          "fName": {
+          "located": {
             "type": "string",
             "nullable": true
           },
-          "sName": {
+          "status": {
             "type": "string",
             "nullable": true
+          },
+          "userType": {
+            "type": "string",
+            "nullable": true
+          },
+          "preferences": {
+            "type": "object",
+            "additionalProperties": { },
+            "nullable": true
+          },
+          "createdAt": {
+            "$ref": "#/components/schemas/Timestamp"
           }
         },
         "additionalProperties": false

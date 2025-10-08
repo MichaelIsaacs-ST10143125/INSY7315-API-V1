@@ -1,0 +1,95 @@
+# ------------------------------------------------------------------------------
+# .gitignore for INSY7315 New Dawn Properties API (ASP.NET Core Web API)
+# ------------------------------------------------------------------------------
+
+# Build results
+bin/
+obj/
+out/
+publish/
+[Bb]uild/
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+*.userprefs
+*.sln.docstates
+
+# Rider / JetBrains
+.idea/
+*.sln.iml
+
+# Visual Studio Code
+.vscode/
+.history/
+*.code-workspace
+
+# Logs
+*.log
+logs/
+log/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+.env.*
+
+# Secrets (don't commit sensitive info)
+secrets.json
+appsettings.Development.json
+
+# Dependency folders
+node_modules/
+packages/
+wwwroot/lib/
+
+# Test results
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+# Docker
+*.pid
+docker-compose.override.yml
+docker-compose.vs.debug.yml
+docker-compose.vs.release.yml
+
+# Publish outputs
+*.Publish.xml
+publish/
+dist/
+
+# Auto-generated files
+GeneratedFiles/
+obj/
+bin/
+_Migrations/
+scaffolding/
+
+# NuGet
+*.nupkg
+.nuget/
+packages/
+project.lock.json
+project.fragment.lock.json
+
+# Windows
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+
+# VS for Mac
+*.pidb
+*.userprefs
