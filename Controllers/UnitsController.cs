@@ -1,6 +1,8 @@
 ﻿using Google.Cloud.Firestore;
 using Microsoft.AspNetCore.Mvc;
+using NewDawnPropertiesApi_V1.Models;
 using NewDawnPropertiesApi_V1.Services;
+// Keep This Controller
 
 namespace NewDawnPropertiesApi_V1.Controllers
 {
@@ -16,15 +18,22 @@ namespace NewDawnPropertiesApi_V1.Controllers
         }
 
         [HttpGet("{propertyId}")]
-        public async Task<ActionResult<IEnumerable<object>>> GetUnits(string propertyId)
+        public async Task<ActionResult<IEnumerable<UnitModel>>> GetUnits(string propertyId)
         {
-            var snapshot = await _firestore.Collection("properties")
-                                           .Document(propertyId)
-                                           .Collection("units")
-                                           .GetSnapshotAsync();
+            // Retrieve the units collection snapshot
+            var snapshot = await _firestore
+                .Collection("properties")
+                .Document(propertyId)
+                .Collection("units")
+                .GetSnapshotAsync();
 
-            return Ok(snapshot.Documents.Select(d => d.ToDictionary()).ToList());
+            var units = snapshot.Documents
+                .Select(d => d.ConvertTo<UnitModel>())
+                .ToList();
+
+            return Ok(units);
         }
+
 
         [HttpGet("{propertyId}/{unitId}")]
         public async Task<ActionResult<object>> GetUnit(string propertyId, string unitId)
@@ -38,5 +47,27 @@ namespace NewDawnPropertiesApi_V1.Controllers
             if (!doc.Exists) return NotFound();
             return Ok(doc.ToDictionary());
         }
+
+
+        [HttpPut("{propertyId}/{unitId}")]
+        public async Task<ActionResult> UpdateUnit(string propertyId, string unitId, [FromBody] UnitModel updatedUnit)
+        {
+            var docRef = _firestore
+                .Collection("properties")
+                .Document(propertyId)
+                .Collection("units")
+                .Document(unitId);
+
+            var docSnapshot = await docRef.GetSnapshotAsync();
+
+            if (!docSnapshot.Exists)
+                return NotFound();
+
+            await docRef.SetAsync(updatedUnit, SetOptions.Overwrite);
+
+            return NoContent();
+        }
+
+
     }
 }

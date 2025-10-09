@@ -1,15 +1,15 @@
 [
   {
-    "ContainingType": "NewDawnPropertiesApi_V1.Controllers.BaseFirestoreController\u00601[[NewDawnPropertiesApi_V1.Models.CaretakerAssignmentModel, NewDawnPropertiesApi-V1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "ContainingType": "NewDawnPropertiesApi_V1.Controllers.BaseFirestoreController\u00601[[NewDawnPropertiesApi_V1.Models.ApplicationModel, NewDawnPropertiesApi-V1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
     "Method": "GetAll",
-    "RelativePath": "api/CaretakerAssignments",
+    "RelativePath": "api/Applications",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[NewDawnPropertiesApi_V1.Models.CaretakerAssignmentModel, NewDawnPropertiesApi-V1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[NewDawnPropertiesApi_V1.Models.ApplicationModel, NewDawnPropertiesApi-V1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -20,25 +20,25 @@
     ]
   },
   {
-    "ContainingType": "NewDawnPropertiesApi_V1.Controllers.BaseFirestoreController\u00601[[NewDawnPropertiesApi_V1.Models.CaretakerAssignmentModel, NewDawnPropertiesApi-V1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "ContainingType": "NewDawnPropertiesApi_V1.Controllers.BaseFirestoreController\u00601[[NewDawnPropertiesApi_V1.Models.ApplicationModel, NewDawnPropertiesApi-V1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
     "Method": "Create",
-    "RelativePath": "api/CaretakerAssignments",
+    "RelativePath": "api/Applications",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "item",
-        "Type": "NewDawnPropertiesApi_V1.Models.CaretakerAssignmentModel",
+        "Type": "NewDawnPropertiesApi_V1.Models.ApplicationModel",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "NewDawnPropertiesApi_V1.Controllers.BaseFirestoreController\u00601[[NewDawnPropertiesApi_V1.Models.CaretakerAssignmentModel, NewDawnPropertiesApi-V1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "ContainingType": "NewDawnPropertiesApi_V1.Controllers.BaseFirestoreController\u00601[[NewDawnPropertiesApi_V1.Models.ApplicationModel, NewDawnPropertiesApi-V1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
     "Method": "Get",
-    "RelativePath": "api/CaretakerAssignments/{id}",
+    "RelativePath": "api/Applications/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -51,7 +51,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "NewDawnPropertiesApi_V1.Models.CaretakerAssignmentModel",
+        "Type": "NewDawnPropertiesApi_V1.Models.ApplicationModel",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -62,9 +62,9 @@
     ]
   },
   {
-    "ContainingType": "NewDawnPropertiesApi_V1.Controllers.BaseFirestoreController\u00601[[NewDawnPropertiesApi_V1.Models.CaretakerAssignmentModel, NewDawnPropertiesApi-V1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "ContainingType": "NewDawnPropertiesApi_V1.Controllers.BaseFirestoreController\u00601[[NewDawnPropertiesApi_V1.Models.ApplicationModel, NewDawnPropertiesApi-V1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
     "Method": "Update",
-    "RelativePath": "api/CaretakerAssignments/{id}",
+    "RelativePath": "api/Applications/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -76,16 +76,412 @@
       },
       {
         "Name": "item",
-        "Type": "NewDawnPropertiesApi_V1.Models.CaretakerAssignmentModel",
+        "Type": "NewDawnPropertiesApi_V1.Models.ApplicationModel",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "NewDawnPropertiesApi_V1.Controllers.BaseFirestoreController\u00601[[NewDawnPropertiesApi_V1.Models.CaretakerAssignmentModel, NewDawnPropertiesApi-V1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "ContainingType": "NewDawnPropertiesApi_V1.Controllers.BaseFirestoreController\u00601[[NewDawnPropertiesApi_V1.Models.ApplicationModel, NewDawnPropertiesApi-V1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
     "Method": "Delete",
-    "RelativePath": "api/CaretakerAssignments/{id}",
+    "RelativePath": "api/Applications/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NewDawnPropertiesApi_V1.Controllers.BaseFirestoreController\u00601[[NewDawnPropertiesApi_V1.Models.InvoiceModel, NewDawnPropertiesApi-V1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetAll",
+    "RelativePath": "api/Invoices",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[NewDawnPropertiesApi_V1.Models.InvoiceModel, NewDawnPropertiesApi-V1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NewDawnPropertiesApi_V1.Controllers.BaseFirestoreController\u00601[[NewDawnPropertiesApi_V1.Models.InvoiceModel, NewDawnPropertiesApi-V1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Create",
+    "RelativePath": "api/Invoices",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "item",
+        "Type": "NewDawnPropertiesApi_V1.Models.InvoiceModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NewDawnPropertiesApi_V1.Controllers.BaseFirestoreController\u00601[[NewDawnPropertiesApi_V1.Models.InvoiceModel, NewDawnPropertiesApi-V1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "api/Invoices/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "NewDawnPropertiesApi_V1.Models.InvoiceModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NewDawnPropertiesApi_V1.Controllers.BaseFirestoreController\u00601[[NewDawnPropertiesApi_V1.Models.InvoiceModel, NewDawnPropertiesApi-V1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Update",
+    "RelativePath": "api/Invoices/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "item",
+        "Type": "NewDawnPropertiesApi_V1.Models.InvoiceModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NewDawnPropertiesApi_V1.Controllers.BaseFirestoreController\u00601[[NewDawnPropertiesApi_V1.Models.InvoiceModel, NewDawnPropertiesApi-V1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Delete",
+    "RelativePath": "api/Invoices/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NewDawnPropertiesApi_V1.Controllers.BaseFirestoreController\u00601[[NewDawnPropertiesApi_V1.Models.LeaseModel, NewDawnPropertiesApi-V1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetAll",
+    "RelativePath": "api/Leases",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[NewDawnPropertiesApi_V1.Models.LeaseModel, NewDawnPropertiesApi-V1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NewDawnPropertiesApi_V1.Controllers.BaseFirestoreController\u00601[[NewDawnPropertiesApi_V1.Models.LeaseModel, NewDawnPropertiesApi-V1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Create",
+    "RelativePath": "api/Leases",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "item",
+        "Type": "NewDawnPropertiesApi_V1.Models.LeaseModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NewDawnPropertiesApi_V1.Controllers.BaseFirestoreController\u00601[[NewDawnPropertiesApi_V1.Models.LeaseModel, NewDawnPropertiesApi-V1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "api/Leases/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "NewDawnPropertiesApi_V1.Models.LeaseModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NewDawnPropertiesApi_V1.Controllers.BaseFirestoreController\u00601[[NewDawnPropertiesApi_V1.Models.LeaseModel, NewDawnPropertiesApi-V1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Update",
+    "RelativePath": "api/Leases/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "item",
+        "Type": "NewDawnPropertiesApi_V1.Models.LeaseModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NewDawnPropertiesApi_V1.Controllers.BaseFirestoreController\u00601[[NewDawnPropertiesApi_V1.Models.LeaseModel, NewDawnPropertiesApi-V1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Delete",
+    "RelativePath": "api/Leases/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NewDawnPropertiesApi_V1.Controllers.BaseFirestoreController\u00601[[NewDawnPropertiesApi_V1.Models.MaintenanceRequestModel, NewDawnPropertiesApi-V1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetAll",
+    "RelativePath": "api/MaintenanceRequests",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[NewDawnPropertiesApi_V1.Models.MaintenanceRequestModel, NewDawnPropertiesApi-V1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NewDawnPropertiesApi_V1.Controllers.BaseFirestoreController\u00601[[NewDawnPropertiesApi_V1.Models.MaintenanceRequestModel, NewDawnPropertiesApi-V1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Create",
+    "RelativePath": "api/MaintenanceRequests",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "item",
+        "Type": "NewDawnPropertiesApi_V1.Models.MaintenanceRequestModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NewDawnPropertiesApi_V1.Controllers.BaseFirestoreController\u00601[[NewDawnPropertiesApi_V1.Models.MaintenanceRequestModel, NewDawnPropertiesApi-V1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "api/MaintenanceRequests/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "NewDawnPropertiesApi_V1.Models.MaintenanceRequestModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NewDawnPropertiesApi_V1.Controllers.BaseFirestoreController\u00601[[NewDawnPropertiesApi_V1.Models.MaintenanceRequestModel, NewDawnPropertiesApi-V1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Update",
+    "RelativePath": "api/MaintenanceRequests/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "item",
+        "Type": "NewDawnPropertiesApi_V1.Models.MaintenanceRequestModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NewDawnPropertiesApi_V1.Controllers.BaseFirestoreController\u00601[[NewDawnPropertiesApi_V1.Models.MaintenanceRequestModel, NewDawnPropertiesApi-V1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Delete",
+    "RelativePath": "api/MaintenanceRequests/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NewDawnPropertiesApi_V1.Controllers.BaseFirestoreController\u00601[[NewDawnPropertiesApi_V1.Models.MessageModel, NewDawnPropertiesApi-V1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetAll",
+    "RelativePath": "api/Messages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[NewDawnPropertiesApi_V1.Models.MessageModel, NewDawnPropertiesApi-V1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NewDawnPropertiesApi_V1.Controllers.BaseFirestoreController\u00601[[NewDawnPropertiesApi_V1.Models.MessageModel, NewDawnPropertiesApi-V1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Create",
+    "RelativePath": "api/Messages",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "item",
+        "Type": "NewDawnPropertiesApi_V1.Models.MessageModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NewDawnPropertiesApi_V1.Controllers.BaseFirestoreController\u00601[[NewDawnPropertiesApi_V1.Models.MessageModel, NewDawnPropertiesApi-V1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "api/Messages/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "NewDawnPropertiesApi_V1.Models.MessageModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NewDawnPropertiesApi_V1.Controllers.BaseFirestoreController\u00601[[NewDawnPropertiesApi_V1.Models.MessageModel, NewDawnPropertiesApi-V1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Update",
+    "RelativePath": "api/Messages/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "item",
+        "Type": "NewDawnPropertiesApi_V1.Models.MessageModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NewDawnPropertiesApi_V1.Controllers.BaseFirestoreController\u00601[[NewDawnPropertiesApi_V1.Models.MessageModel, NewDawnPropertiesApi-V1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Delete",
+    "RelativePath": "api/Messages/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -198,204 +594,6 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "NewDawnPropertiesApi_V1.Controllers.BaseFirestoreController\u00601[[NewDawnPropertiesApi_V1.Models.RoomModel, NewDawnPropertiesApi-V1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-    "Method": "GetAll",
-    "RelativePath": "api/Rooms",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[NewDawnPropertiesApi_V1.Models.RoomModel, NewDawnPropertiesApi-V1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "NewDawnPropertiesApi_V1.Controllers.BaseFirestoreController\u00601[[NewDawnPropertiesApi_V1.Models.RoomModel, NewDawnPropertiesApi-V1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-    "Method": "Create",
-    "RelativePath": "api/Rooms",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "item",
-        "Type": "NewDawnPropertiesApi_V1.Models.RoomModel",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "NewDawnPropertiesApi_V1.Controllers.BaseFirestoreController\u00601[[NewDawnPropertiesApi_V1.Models.RoomModel, NewDawnPropertiesApi-V1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-    "Method": "Get",
-    "RelativePath": "api/Rooms/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.String",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "NewDawnPropertiesApi_V1.Models.RoomModel",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "NewDawnPropertiesApi_V1.Controllers.BaseFirestoreController\u00601[[NewDawnPropertiesApi_V1.Models.RoomModel, NewDawnPropertiesApi-V1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-    "Method": "Update",
-    "RelativePath": "api/Rooms/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.String",
-        "IsRequired": true
-      },
-      {
-        "Name": "item",
-        "Type": "NewDawnPropertiesApi_V1.Models.RoomModel",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "NewDawnPropertiesApi_V1.Controllers.BaseFirestoreController\u00601[[NewDawnPropertiesApi_V1.Models.RoomModel, NewDawnPropertiesApi-V1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-    "Method": "Delete",
-    "RelativePath": "api/Rooms/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.String",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "NewDawnPropertiesApi_V1.Controllers.BaseFirestoreController\u00601[[NewDawnPropertiesApi_V1.Models.TenantAssignmentModel, NewDawnPropertiesApi-V1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-    "Method": "GetAll",
-    "RelativePath": "api/TenantAssignments",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[NewDawnPropertiesApi_V1.Models.TenantAssignmentModel, NewDawnPropertiesApi-V1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "NewDawnPropertiesApi_V1.Controllers.BaseFirestoreController\u00601[[NewDawnPropertiesApi_V1.Models.TenantAssignmentModel, NewDawnPropertiesApi-V1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-    "Method": "Create",
-    "RelativePath": "api/TenantAssignments",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "item",
-        "Type": "NewDawnPropertiesApi_V1.Models.TenantAssignmentModel",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "NewDawnPropertiesApi_V1.Controllers.BaseFirestoreController\u00601[[NewDawnPropertiesApi_V1.Models.TenantAssignmentModel, NewDawnPropertiesApi-V1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-    "Method": "Get",
-    "RelativePath": "api/TenantAssignments/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.String",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "NewDawnPropertiesApi_V1.Models.TenantAssignmentModel",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "NewDawnPropertiesApi_V1.Controllers.BaseFirestoreController\u00601[[NewDawnPropertiesApi_V1.Models.TenantAssignmentModel, NewDawnPropertiesApi-V1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-    "Method": "Update",
-    "RelativePath": "api/TenantAssignments/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.String",
-        "IsRequired": true
-      },
-      {
-        "Name": "item",
-        "Type": "NewDawnPropertiesApi_V1.Models.TenantAssignmentModel",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "NewDawnPropertiesApi_V1.Controllers.BaseFirestoreController\u00601[[NewDawnPropertiesApi_V1.Models.TenantAssignmentModel, NewDawnPropertiesApi-V1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-    "Method": "Delete",
-    "RelativePath": "api/TenantAssignments/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.String",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "NewDawnPropertiesApi_V1.Controllers.UnitsController",
     "Method": "GetUnits",
     "RelativePath": "api/Units/{propertyId}",
@@ -411,7 +609,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[NewDawnPropertiesApi_V1.Models.UnitModel, NewDawnPropertiesApi-V1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -437,6 +635,32 @@
       {
         "Name": "unitId",
         "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NewDawnPropertiesApi_V1.Controllers.UnitsController",
+    "Method": "UpdateUnit",
+    "RelativePath": "api/Units/{propertyId}/{unitId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "propertyId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "unitId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "updatedUnit",
+        "Type": "NewDawnPropertiesApi_V1.Models.UnitModel",
         "IsRequired": true
       }
     ],

@@ -5,9 +5,10 @@ using NewDawnPropertiesApi_V1.Services;
 namespace NewDawnPropertiesApi_V1.Controllers
 {
     [Route("api/[controller]")]
-    public class RoomsController : BaseFirestoreController<RoomModel>
+    public class MessagesController : BaseFirestoreController<MessageModel>
     {
-        public RoomsController(FirestoreService firestoreService)
-            : base(firestoreService, "Rooms") { }
+        public MessagesController(FirestoreService firestoreService)
+            : base(firestoreService, "messages") { }
     }
+
 }
