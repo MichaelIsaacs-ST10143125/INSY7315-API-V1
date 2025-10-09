@@ -1,50 +1,58 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\dilan\\source\\repos\\PROG7314-Part2\\INSY7315-API-V1\\",
+  "WorkspaceRootPath": "C:\\Users\\jarry\\source\\repos\\INSY7315 API\\INSY7315-API-V1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|c:\\users\\dilan\\source\\repos\\prog7314-part2\\insy7315-api-v1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|c:\\users\\dilan\\source\\repos\\prog7314-part2\\insy7315-api-v1\\controllers\\unitscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|solutionrelative:controllers\\unitscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|c:\\users\\dilan\\source\\repos\\prog7314-part2\\insy7315-api-v1\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|c:\\users\\dilan\\source\\repos\\prog7314-part2\\insy7315-api-v1\\controllers\\tenantassignmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|solutionrelative:controllers\\tenantassignmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|c:\\users\\dilan\\source\\repos\\prog7314-part2\\insy7315-api-v1\\controllers\\roomscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|solutionrelative:controllers\\roomscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|c:\\users\\dilan\\source\\repos\\prog7314-part2\\insy7315-api-v1\\controllers\\propertiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|solutionrelative:controllers\\propertiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|c:\\users\\dilan\\source\\repos\\prog7314-part2\\insy7315-api-v1\\controllers\\caretakerassignmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|solutionrelative:controllers\\caretakerassignmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|c:\\users\\dilan\\source\\repos\\prog7314-part2\\insy7315-api-v1\\controllers\\basefirestorecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|solutionrelative:controllers\\basefirestorecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|c:\\users\\dilan\\source\\repos\\prog7314-part2\\insy7315-api-v1\\services\\firestoreservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|c:\\users\\jarry\\source\\repos\\insy7315 api\\insy7315-api-v1\\services\\firestoreservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|solutionrelative:services\\firestoreservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|c:\\users\\dilan\\source\\repos\\prog7314-part2\\insy7315-api-v1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|c:\\users\\jarry\\source\\repos\\insy7315 api\\insy7315-api-v1\\controllers\\unitscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|solutionrelative:controllers\\unitscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|c:\\users\\dilan\\source\\repos\\prog7314-part2\\insy7315-api-v1\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|c:\\users\\jarry\\source\\repos\\insy7315 api\\insy7315-api-v1\\controllers\\basefirestorecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|solutionrelative:controllers\\basefirestorecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|c:\\users\\jarry\\source\\repos\\insy7315 api\\insy7315-api-v1\\controllers\\applicationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|solutionrelative:controllers\\applicationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|c:\\users\\jarry\\source\\repos\\insy7315 api\\insy7315-api-v1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|c:\\users\\jarry\\source\\repos\\insy7315 api\\insy7315-api-v1\\models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|solutionrelative:models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|c:\\users\\jarry\\source\\repos\\insy7315 api\\insy7315-api-v1\\models\\unitmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|solutionrelative:models\\unitmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|c:\\users\\jarry\\source\\repos\\insy7315 api\\insy7315-api-v1\\models\\propertymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|solutionrelative:models\\propertymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|c:\\users\\jarry\\source\\repos\\insy7315 api\\insy7315-api-v1\\models\\messagemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|solutionrelative:models\\messagemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|c:\\users\\jarry\\source\\repos\\insy7315 api\\insy7315-api-v1\\models\\maintenancerequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|solutionrelative:models\\maintenancerequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|c:\\users\\jarry\\source\\repos\\insy7315 api\\insy7315-api-v1\\models\\leasemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|solutionrelative:models\\leasemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|c:\\users\\jarry\\source\\repos\\insy7315 api\\insy7315-api-v1\\models\\invoicemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|solutionrelative:models\\invoicemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|c:\\users\\jarry\\source\\repos\\insy7315 api\\insy7315-api-v1\\models\\applicationmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|solutionrelative:models\\applicationmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,46 +62,31 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 12,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TenantAssignmentController.cs",
-              "DocumentMoniker": "C:\\Users\\dilan\\source\\repos\\PROG7314-Part2\\INSY7315-API-V1\\Controllers\\TenantAssignmentController.cs",
-              "RelativeDocumentMoniker": "Controllers\\TenantAssignmentController.cs",
-              "ToolTip": "C:\\Users\\dilan\\source\\repos\\PROG7314-Part2\\INSY7315-API-V1\\Controllers\\TenantAssignmentController.cs",
-              "RelativeToolTip": "Controllers\\TenantAssignmentController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-08T12:40:10.862Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "RoomsController.cs",
-              "DocumentMoniker": "C:\\Users\\dilan\\source\\repos\\PROG7314-Part2\\INSY7315-API-V1\\Controllers\\RoomsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\RoomsController.cs",
-              "ToolTip": "C:\\Users\\dilan\\source\\repos\\PROG7314-Part2\\INSY7315-API-V1\\Controllers\\RoomsController.cs",
-              "RelativeToolTip": "Controllers\\RoomsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-08T12:40:04.205Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PropertiesController.cs",
-              "DocumentMoniker": "C:\\Users\\dilan\\source\\repos\\PROG7314-Part2\\INSY7315-API-V1\\Controllers\\PropertiesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\PropertiesController.cs",
-              "ToolTip": "C:\\Users\\dilan\\source\\repos\\PROG7314-Part2\\INSY7315-API-V1\\Controllers\\PropertiesController.cs",
-              "RelativeToolTip": "Controllers\\PropertiesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-08T12:39:55.55Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Bookmark",
@@ -104,106 +97,177 @@
               "Name": "ST:3:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "UnitsController.cs",
-              "DocumentMoniker": "C:\\Users\\dilan\\source\\repos\\PROG7314-Part2\\INSY7315-API-V1\\Controllers\\UnitsController.cs",
+              "DocumentMoniker": "C:\\Users\\jarry\\source\\repos\\INSY7315 API\\INSY7315-API-V1\\Controllers\\UnitsController.cs",
               "RelativeDocumentMoniker": "Controllers\\UnitsController.cs",
-              "ToolTip": "C:\\Users\\dilan\\source\\repos\\PROG7314-Part2\\INSY7315-API-V1\\Controllers\\UnitsController.cs",
+              "ToolTip": "C:\\Users\\jarry\\source\\repos\\INSY7315 API\\INSY7315-API-V1\\Controllers\\UnitsController.cs",
               "RelativeToolTip": "Controllers\\UnitsController.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAkwCoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-08T12:33:17.272Z",
+              "WhenOpened": "2025-10-09T15:33:34.474Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Users\\dilan\\source\\repos\\PROG7314-Part2\\INSY7315-API-V1\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
-              "ToolTip": "C:\\Users\\dilan\\source\\repos\\PROG7314-Part2\\INSY7315-API-V1\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "Controllers\\UsersController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Title": "BaseFirestoreController.cs",
+              "DocumentMoniker": "C:\\Users\\jarry\\source\\repos\\INSY7315 API\\INSY7315-API-V1\\Controllers\\BaseFirestoreController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BaseFirestoreController.cs",
+              "ToolTip": "C:\\Users\\jarry\\source\\repos\\INSY7315 API\\INSY7315-API-V1\\Controllers\\BaseFirestoreController.cs",
+              "RelativeToolTip": "Controllers\\BaseFirestoreController.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAmwDoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-08T12:40:18.33Z",
+              "WhenOpened": "2025-10-09T15:23:36.443Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ApplicationsController.cs",
+              "DocumentMoniker": "C:\\Users\\jarry\\source\\repos\\INSY7315 API\\INSY7315-API-V1\\Controllers\\ApplicationsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ApplicationsController.cs",
+              "ToolTip": "C:\\Users\\jarry\\source\\repos\\INSY7315 API\\INSY7315-API-V1\\Controllers\\ApplicationsController.cs",
+              "RelativeToolTip": "Controllers\\ApplicationsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T15:22:39.522Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\dilan\\source\\repos\\PROG7314-Part2\\INSY7315-API-V1\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\dilan\\source\\repos\\PROG7314-Part2\\INSY7315-API-V1\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA+AAAAAAAAAA==",
+              "Title": "FirestoreService.cs",
+              "DocumentMoniker": "C:\\Users\\jarry\\source\\repos\\INSY7315 API\\INSY7315-API-V1\\Services\\FirestoreService.cs",
+              "RelativeDocumentMoniker": "Services\\FirestoreService.cs",
+              "ToolTip": "C:\\Users\\jarry\\source\\repos\\INSY7315 API\\INSY7315-API-V1\\Services\\FirestoreService.cs",
+              "RelativeToolTip": "Services\\FirestoreService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-08T12:09:41.759Z",
+              "WhenOpened": "2025-10-09T15:18:17.063Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\jarry\\source\\repos\\INSY7315 API\\INSY7315-API-V1\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\jarry\\source\\repos\\INSY7315 API\\INSY7315-API-V1\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T15:18:09.867Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserModel.cs",
+              "DocumentMoniker": "C:\\Users\\jarry\\source\\repos\\INSY7315 API\\INSY7315-API-V1\\Models\\UserModel.cs",
+              "RelativeDocumentMoniker": "Models\\UserModel.cs",
+              "ToolTip": "C:\\Users\\jarry\\source\\repos\\INSY7315 API\\INSY7315-API-V1\\Models\\UserModel.cs",
+              "RelativeToolTip": "Models\\UserModel.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T15:00:14.049Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "CaretakerAssignmentsController.cs",
-              "DocumentMoniker": "C:\\Users\\dilan\\source\\repos\\PROG7314-Part2\\INSY7315-API-V1\\Controllers\\CaretakerAssignmentsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\CaretakerAssignmentsController.cs",
-              "ToolTip": "C:\\Users\\dilan\\source\\repos\\PROG7314-Part2\\INSY7315-API-V1\\Controllers\\CaretakerAssignmentsController.cs",
-              "RelativeToolTip": "Controllers\\CaretakerAssignmentsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Title": "UnitModel.cs",
+              "DocumentMoniker": "C:\\Users\\jarry\\source\\repos\\INSY7315 API\\INSY7315-API-V1\\Models\\UnitModel.cs",
+              "RelativeDocumentMoniker": "Models\\UnitModel.cs",
+              "ToolTip": "C:\\Users\\jarry\\source\\repos\\INSY7315 API\\INSY7315-API-V1\\Models\\UnitModel.cs",
+              "RelativeToolTip": "Models\\UnitModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-08T12:37:19.346Z",
+              "WhenOpened": "2025-10-09T15:00:13.411Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "BaseFirestoreController.cs",
-              "DocumentMoniker": "C:\\Users\\dilan\\source\\repos\\PROG7314-Part2\\INSY7315-API-V1\\Controllers\\BaseFirestoreController.cs",
-              "RelativeDocumentMoniker": "Controllers\\BaseFirestoreController.cs",
-              "ToolTip": "C:\\Users\\dilan\\source\\repos\\PROG7314-Part2\\INSY7315-API-V1\\Controllers\\BaseFirestoreController.cs",
-              "RelativeToolTip": "Controllers\\BaseFirestoreController.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAkwDoAAAAAAAAAAAAAAA==",
+              "Title": "PropertyModel.cs",
+              "DocumentMoniker": "C:\\Users\\jarry\\source\\repos\\INSY7315 API\\INSY7315-API-V1\\Models\\PropertyModel.cs",
+              "RelativeDocumentMoniker": "Models\\PropertyModel.cs",
+              "ToolTip": "C:\\Users\\jarry\\source\\repos\\INSY7315 API\\INSY7315-API-V1\\Models\\PropertyModel.cs",
+              "RelativeToolTip": "Models\\PropertyModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-08T12:25:42.29Z",
+              "WhenOpened": "2025-10-09T15:00:12.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MessageModel.cs",
+              "DocumentMoniker": "C:\\Users\\jarry\\source\\repos\\INSY7315 API\\INSY7315-API-V1\\Models\\MessageModel.cs",
+              "RelativeDocumentMoniker": "Models\\MessageModel.cs",
+              "ToolTip": "C:\\Users\\jarry\\source\\repos\\INSY7315 API\\INSY7315-API-V1\\Models\\MessageModel.cs",
+              "RelativeToolTip": "Models\\MessageModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T15:00:12.347Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\dilan\\source\\repos\\PROG7314-Part2\\INSY7315-API-V1\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\dilan\\source\\repos\\PROG7314-Part2\\INSY7315-API-V1\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-08T12:07:22.65Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "FirestoreService.cs",
-              "DocumentMoniker": "C:\\Users\\dilan\\source\\repos\\PROG7314-Part2\\INSY7315-API-V1\\Services\\FirestoreService.cs",
-              "RelativeDocumentMoniker": "Services\\FirestoreService.cs",
-              "ToolTip": "C:\\Users\\dilan\\source\\repos\\PROG7314-Part2\\INSY7315-API-V1\\Services\\FirestoreService.cs",
-              "RelativeToolTip": "Services\\FirestoreService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
+              "Title": "MaintenanceRequestModel.cs",
+              "DocumentMoniker": "C:\\Users\\jarry\\source\\repos\\INSY7315 API\\INSY7315-API-V1\\Models\\MaintenanceRequestModel.cs",
+              "RelativeDocumentMoniker": "Models\\MaintenanceRequestModel.cs",
+              "ToolTip": "C:\\Users\\jarry\\source\\repos\\INSY7315 API\\INSY7315-API-V1\\Models\\MaintenanceRequestModel.cs",
+              "RelativeToolTip": "Models\\MaintenanceRequestModel.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBEAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-08T11:39:17.984Z",
+              "WhenOpened": "2025-10-09T15:00:11.843Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "Dockerfile",
-              "DocumentMoniker": "C:\\Users\\dilan\\source\\repos\\PROG7314-Part2\\INSY7315-API-V1\\Dockerfile",
-              "RelativeDocumentMoniker": "Dockerfile",
-              "ToolTip": "C:\\Users\\dilan\\source\\repos\\PROG7314-Part2\\INSY7315-API-V1\\Dockerfile",
-              "RelativeToolTip": "Dockerfile",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAYwCMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-10-08T11:15:49.004Z"
+              "Title": "LeaseModel.cs",
+              "DocumentMoniker": "C:\\Users\\jarry\\source\\repos\\INSY7315 API\\INSY7315-API-V1\\Models\\LeaseModel.cs",
+              "RelativeDocumentMoniker": "Models\\LeaseModel.cs",
+              "ToolTip": "C:\\Users\\jarry\\source\\repos\\INSY7315 API\\INSY7315-API-V1\\Models\\LeaseModel.cs",
+              "RelativeToolTip": "Models\\LeaseModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T15:00:11.204Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "InvoiceModel.cs",
+              "DocumentMoniker": "C:\\Users\\jarry\\source\\repos\\INSY7315 API\\INSY7315-API-V1\\Models\\InvoiceModel.cs",
+              "RelativeDocumentMoniker": "Models\\InvoiceModel.cs",
+              "ToolTip": "C:\\Users\\jarry\\source\\repos\\INSY7315 API\\INSY7315-API-V1\\Models\\InvoiceModel.cs",
+              "RelativeToolTip": "Models\\InvoiceModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T15:00:10.653Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ApplicationModel.cs",
+              "DocumentMoniker": "C:\\Users\\jarry\\source\\repos\\INSY7315 API\\INSY7315-API-V1\\Models\\ApplicationModel.cs",
+              "RelativeDocumentMoniker": "Models\\ApplicationModel.cs",
+              "ToolTip": "C:\\Users\\jarry\\source\\repos\\INSY7315 API\\INSY7315-API-V1\\Models\\ApplicationModel.cs",
+              "RelativeToolTip": "Models\\ApplicationModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T14:58:49.292Z",
+              "EditorCaption": ""
             }
           ]
         }

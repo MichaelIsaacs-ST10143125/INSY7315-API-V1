@@ -21,6 +21,6 @@ namespace NewDawnPropertiesApi_V1.Models
         public string Status { get; set; } = null!;
 
         [FirestoreProperty("createdAt")]
-        public Timestamp? CreatedAt { get; set; }
+        public DateTime? CreatedAt { get; set; }
     }
 }

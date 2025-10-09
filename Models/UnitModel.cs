@@ -16,7 +16,7 @@ namespace NewDawnPropertiesApi_V1.Models
         public string? LeaseID { get; set; }
 
         [FirestoreProperty("rentAmount")]
-        public string RentAmount { get; set; } = null!;
+        public int RentAmount { get; set; }
 
         [FirestoreProperty("tenantID")]
         public string? TenantID { get; set; }
