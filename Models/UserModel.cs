@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace NewDawnPropertiesApi_V1.Models
 {
-    [FirestoreData] // 🔹 Make sure this is here
+    [FirestoreData] // Make sure this is here
     public class UserModel
     {
         [FirestoreDocumentId]

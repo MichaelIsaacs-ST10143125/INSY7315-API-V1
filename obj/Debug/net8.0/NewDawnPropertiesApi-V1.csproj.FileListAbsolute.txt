@@ -167,4 +167,4 @@ C:\Users\jarry\source\repos\INSY7315 API\INSY7315-API-V1\obj\Debug\net8.0\refint
 C:\Users\jarry\source\repos\INSY7315 API\INSY7315-API-V1\obj\Debug\net8.0\NewDawnPropertiesApi-V1.pdb
 C:\Users\jarry\source\repos\INSY7315 API\INSY7315-API-V1\obj\Debug\net8.0\NewDawnPropertiesApi-V1.genruntimeconfig.cache
 C:\Users\jarry\source\repos\INSY7315 API\INSY7315-API-V1\obj\Debug\net8.0\ref\NewDawnPropertiesApi-V1.dll
-C:\Users\jarry\source\repos\INSY7315 API\INSY7315-API-V1\bin\Debug\net8.0\FIREBASE_CONFIG.json
+C:\Users\jarry\source\repos\INSY7315 API\INSY7315-API-V1\bin\Debug\net8.0\firebase-key.json

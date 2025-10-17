@@ -9,7 +9,7 @@ namespace NewDawnPropertiesApi_V1.Models
         public string? Id { get; set; }
 
         [FirestoreProperty("amount")]
-        public double Amount { get; set; }
+        public double? Amount { get; set; }
 
         [FirestoreProperty("createdAt")]
         public DateTime? CreatedAt { get; set; }
