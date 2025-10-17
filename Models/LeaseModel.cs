@@ -28,6 +28,9 @@ namespace NewDawnPropertiesApi_V1.Models
 
         [FirestoreProperty("unitID")]
         public string? UnitID { get; set; }
+
+        [FirestoreProperty("rentAmount")]
+        public int? RentAmount { get; set; }
     }
 
 }

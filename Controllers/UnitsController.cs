@@ -1,5 +1,6 @@
 ﻿using Google.Cloud.Firestore;
 using Microsoft.AspNetCore.Mvc;
+using NewDawnPropertiesApi_V1.AppModels;
 using NewDawnPropertiesApi_V1.Models;
 using NewDawnPropertiesApi_V1.Services;
 // Keep This Controller
@@ -49,25 +50,117 @@ namespace NewDawnPropertiesApi_V1.Controllers
         }
 
 
-        [HttpPut("{propertyId}/{unitId}")]
-        public async Task<ActionResult> UpdateUnit(string propertyId, string unitId, [FromBody] UnitModel updatedUnit)
+        [HttpPut("add/tenant/mobile/{propertyId}/{unitId}")]
+        public async Task<ActionResult> UpdateUnitAndLease(
+            string propertyId,
+            string unitId,
+            [FromBody] UpdateUnitAndLeaseModel request)
         {
-            var docRef = _firestore
+            var unitRef = _firestore
                 .Collection("properties")
                 .Document(propertyId)
                 .Collection("units")
                 .Document(unitId);
 
-            var docSnapshot = await docRef.GetSnapshotAsync();
+            var unitSnapshot = await unitRef.GetSnapshotAsync();
+            if (!unitSnapshot.Exists)
+                return NotFound("Unit not found");
 
-            if (!docSnapshot.Exists)
-                return NotFound();
+            // Get the lease ID from the unit document
+            string? leaseId = unitSnapshot.ContainsField("leaseID")
+                ? unitSnapshot.GetValue<string>("leaseID")
+                : null;
 
-            await docRef.SetAsync(updatedUnit, SetOptions.Overwrite);
+            if (string.IsNullOrEmpty(leaseId))
+                return BadRequest("Unit does not have an associated leaseID");
+
+            // Prepare unit updates
+            var unitUpdates = new Dictionary<string, object?>
+            {
+                { "isAvailable", false },
+                { "rentAmount", request.RentAmount },
+                { "tenantID", request.TenantID }
+            };
+
+            // Apply updates to the unit document
+            await unitRef.SetAsync(unitUpdates, SetOptions.MergeAll);
+
+            // Get lease document reference
+            var leaseRef = _firestore
+                .Collection("leases")
+                .Document(leaseId);
+
+            // Prepare lease updates
+            var leaseUpdates = new Dictionary<string, object?>
+            {
+                { "deposit", request.Deposit },
+                { "rentAmount", request.RentAmount },
+                { "status", "Active" },
+                { "tenantID", request.TenantID },
+                { "startDate", request.StartDate },
+                { "endDate", request.EndDate }
+            };
+
+            // Apply updates to the lease document
+            await leaseRef.SetAsync(leaseUpdates, SetOptions.MergeAll);
 
             return NoContent();
         }
 
+        [HttpPut("remove/tenant/mobile/{propertyId}/{unitId}")]
+        public async Task<ActionResult> RemoveTenantUnitAndLease(
+            string propertyId,
+            string unitId)
+        {
+            var unitRef = _firestore
+                .Collection("properties")
+                .Document(propertyId)
+                .Collection("units")
+                .Document(unitId);
 
+            var unitSnapshot = await unitRef.GetSnapshotAsync();
+            if (!unitSnapshot.Exists)
+                return NotFound("Unit not found");
+
+            // Get the lease ID from the unit document
+            string? leaseId = unitSnapshot.ContainsField("leaseID")
+                ? unitSnapshot.GetValue<string>("leaseID")
+                : null;
+
+            if (string.IsNullOrEmpty(leaseId))
+                return BadRequest("Unit does not have an associated leaseID");
+
+            // Prepare unit updates
+            var unitUpdates = new Dictionary<string, object?>
+            {
+                { "isAvailable", true },
+                { "rentAmount", 0 },
+                { "tenantID", "" }
+            };
+
+            // Apply updates to the unit document
+            await unitRef.SetAsync(unitUpdates, SetOptions.MergeAll);
+
+            // Get lease document reference
+            var leaseRef = _firestore
+                .Collection("leases")
+                .Document(leaseId);
+
+            // Prepare lease updates
+            var leaseUpdates = new Dictionary<string, object?>
+            {
+                { "deposit", 0 },
+                { "rentAmount", 0 },
+                { "status", "Inactive" },
+                { "tenantID", "" },
+                { "startDate", DateTime.UtcNow },
+                { "endDate", DateTime.UtcNow }
+            };
+
+            // Apply updates to the lease document
+            await leaseRef.SetAsync(leaseUpdates, SetOptions.MergeAll);
+
+            return NoContent();
+        }
     }
 }

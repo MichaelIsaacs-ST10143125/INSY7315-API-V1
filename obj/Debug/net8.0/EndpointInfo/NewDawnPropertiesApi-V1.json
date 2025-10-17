@@ -5,6 +5,90 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/admin/mobile/AdminDashboard/{uid}": {
+      "get": {
+        "tags": [
+          "AdminDashboard"
+        ],
+        "parameters": [
+          {
+            "name": "uid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ai/escalation/AiEscalation/mobile/{uid}": {
+      "get": {
+        "tags": [
+          "AiEscalation"
+        ],
+        "parameters": [
+          {
+            "name": "uid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/Applications": {
       "get": {
         "tags": [
@@ -163,6 +247,79 @@
             }
           }
         ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Invoices/user/mobile/{uid}": {
+      "get": {
+        "tags": [
+          "Invoices"
+        ],
+        "parameters": [
+          {
+            "name": "uid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Invoices/api/user/mobile/add-payment": {
+      "post": {
+        "tags": [
+          "Invoices"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddInvoiceModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddInvoiceModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddInvoiceModel"
+              }
+            }
+          }
+        },
         "responses": {
           "200": {
             "description": "OK"
@@ -335,6 +492,48 @@
         }
       }
     },
+    "/api/Leases/manager/mobile/{uid}": {
+      "get": {
+        "tags": [
+          "Leases"
+        ],
+        "parameters": [
+          {
+            "name": "uid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/Leases": {
       "get": {
         "tags": [
@@ -500,7 +699,80 @@
         }
       }
     },
-    "/api/MaintenanceRequests": {
+    "/api/all/MaintenanceRequests/user/mobile/{uid}": {
+      "get": {
+        "tags": [
+          "MaintenanceRequests"
+        ],
+        "parameters": [
+          {
+            "name": "uid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/all/MaintenanceRequests/add/mobile": {
+      "post": {
+        "tags": [
+          "MaintenanceRequests"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateMaintenanceRequestModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateMaintenanceRequestModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateMaintenanceRequestModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/all/MaintenanceRequests": {
       "get": {
         "tags": [
           "MaintenanceRequests"
@@ -567,7 +839,7 @@
         }
       }
     },
-    "/api/MaintenanceRequests/{id}": {
+    "/api/all/MaintenanceRequests/{id}": {
       "get": {
         "tags": [
           "MaintenanceRequests"
@@ -665,10 +937,20 @@
         }
       }
     },
-    "/api/Messages": {
+    "/api/manager/mobile/Managerdashboard/{uid}": {
       "get": {
         "tags": [
-          "Messages"
+          "Managerdashboard"
+        ],
+        "parameters": [
+          {
+            "name": "uid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
         ],
         "responses": {
           "200": {
@@ -676,70 +958,40 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/MessageModel"
-                  }
+                  "$ref": "#/components/schemas/ManagerDashboardModel"
                 }
               },
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/MessageModel"
-                  }
+                  "$ref": "#/components/schemas/ManagerDashboardModel"
                 }
               },
               "text/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/MessageModel"
-                  }
+                  "$ref": "#/components/schemas/ManagerDashboardModel"
                 }
               }
             }
-          }
-        }
-      },
-      "post": {
-        "tags": [
-          "Messages"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/MessageModel"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/MessageModel"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/MessageModel"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
           }
         }
       }
     },
-    "/api/Messages/{id}": {
+    "/api/Messages/messages/mobile/{uid}/{receiverEmail}": {
       "get": {
         "tags": [
           "Messages"
         ],
         "parameters": [
           {
-            "name": "id",
+            "name": "uid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "receiverEmail",
             "in": "path",
             "required": true,
             "schema": {
@@ -753,30 +1005,35 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/MessageModel"
+                  "type": "array",
+                  "items": { }
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/MessageModel"
+                  "type": "array",
+                  "items": { }
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/MessageModel"
+                  "type": "array",
+                  "items": { }
                 }
               }
             }
           }
         }
-      },
-      "put": {
+      }
+    },
+    "/api/Messages/users/mobile/{uid}": {
+      "get": {
         "tags": [
           "Messages"
         ],
         "parameters": [
           {
-            "name": "id",
+            "name": "uid",
             "in": "path",
             "required": true,
             "schema": {
@@ -784,38 +1041,41 @@
             }
           }
         ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/MessageModel"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/MessageModel"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/MessageModel"
-              }
-            }
-          }
-        },
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              }
+            }
           }
         }
-      },
-      "delete": {
+      }
+    },
+    "/api/Profile/user/{uid}": {
+      "get": {
         "tags": [
-          "Messages"
+          "Profile"
         ],
         "parameters": [
           {
-            "name": "id",
+            "name": "uid",
             "in": "path",
             "required": true,
             "schema": {
@@ -825,7 +1085,103 @@
         ],
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Properties/user/mobile/tenant/guest": {
+      "get": {
+        "tags": [
+          "Properties"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PropertyMobileModel"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PropertyMobileModel"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PropertyMobileModel"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Properties/user/mobile/manager": {
+      "get": {
+        "tags": [
+          "Properties"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PropertyMobileModel"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PropertyMobileModel"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PropertyMobileModel"
+                  }
+                }
+              }
+            }
           }
         }
       }
@@ -995,6 +1351,84 @@
         }
       }
     },
+    "/api/Report/generate-report/mobile/{uid}": {
+      "get": {
+        "tags": [
+          "Report"
+        ],
+        "parameters": [
+          {
+            "name": "uid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReportModel"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReportModel"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReportModel"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/mobile/TenantDashboard/{uid}": {
+      "get": {
+        "tags": [
+          "TenantDashboard"
+        ],
+        "parameters": [
+          {
+            "name": "uid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TenantDashboardModel"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TenantDashboardModel"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TenantDashboardModel"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/Units/{propertyId}": {
       "get": {
         "tags": [
@@ -1071,7 +1505,9 @@
             "description": "OK"
           }
         }
-      },
+      }
+    },
+    "/api/Units/add/tenant/mobile/{propertyId}/{unitId}": {
       "put": {
         "tags": [
           "Units"
@@ -1098,17 +1534,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/UnitModel"
+                "$ref": "#/components/schemas/UpdateUnitAndLeaseModel"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/UnitModel"
+                "$ref": "#/components/schemas/UpdateUnitAndLeaseModel"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/UnitModel"
+                "$ref": "#/components/schemas/UpdateUnitAndLeaseModel"
               }
             }
           }
@@ -1116,6 +1552,84 @@
         "responses": {
           "200": {
             "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Units/remove/tenant/mobile/{propertyId}/{unitId}": {
+      "put": {
+        "tags": [
+          "Units"
+        ],
+        "parameters": [
+          {
+            "name": "propertyId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "unitId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Users/mobile/admin/{uid}": {
+      "get": {
+        "tags": [
+          "Users"
+        ],
+        "parameters": [
+          {
+            "name": "uid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AdminUserModel"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AdminUserModel"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AdminUserModel"
+                  }
+                }
+              }
+            }
           }
         }
       }
@@ -1288,6 +1802,43 @@
   },
   "components": {
     "schemas": {
+      "AddInvoiceModel": {
+        "type": "object",
+        "properties": {
+          "amount": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "uid": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "AdminUserModel": {
+        "type": "object",
+        "properties": {
+          "fullName": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "userType": {
+            "type": "string",
+            "nullable": true
+          },
+          "located": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "ApplicationModel": {
         "type": "object",
         "properties": {
@@ -1327,6 +1878,28 @@
         },
         "additionalProperties": false
       },
+      "CreateMaintenanceRequestModel": {
+        "type": "object",
+        "properties": {
+          "uid": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "urgency": {
+            "type": "string",
+            "nullable": true
+          },
+          "category": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "InvoiceModel": {
         "type": "object",
         "properties": {
@@ -1336,7 +1909,8 @@
           },
           "amount": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "nullable": true
           },
           "createdAt": {
             "type": "string",
@@ -1399,6 +1973,11 @@
           "unitID": {
             "type": "string",
             "nullable": true
+          },
+          "rentAmount": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -1450,28 +2029,65 @@
         },
         "additionalProperties": false
       },
-      "MessageModel": {
+      "ManagerDashboardModel": {
         "type": "object",
         "properties": {
-          "id": {
+          "tenantCount": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "occupancyRate": {
             "type": "string",
             "nullable": true
           },
-          "createdAt": {
-            "type": "string",
-            "format": "date-time",
+          "leasesExpiringSoon": {
+            "type": "integer",
+            "format": "int32",
             "nullable": true
           },
-          "message": {
+          "totalRentCollectedThisMonth": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "totalOutstandingRent": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "maintenanceRequestsCount": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PropertyMobileModel": {
+        "type": "object",
+        "properties": {
+          "isAvailable": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "unitNumber": {
             "type": "string",
             "nullable": true
           },
-          "senderID": {
+          "propertyName": {
             "type": "string",
             "nullable": true
           },
-          "receiverID": {
+          "propertyAddress": {
             "type": "string",
+            "nullable": true
+          },
+          "amenities": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
             "nullable": true
           }
         },
@@ -1511,6 +2127,149 @@
         },
         "additionalProperties": false
       },
+      "PropertySummary": {
+        "type": "object",
+        "properties": {
+          "propertyId": {
+            "type": "string",
+            "nullable": true
+          },
+          "propertyName": {
+            "type": "string",
+            "nullable": true
+          },
+          "maintenanceInProgress": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "maintenanceCompleted": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "leasesActive": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "leasesInactive": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "applicationsPending": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "applicationsApproved": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "applicationsRejected": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "unpaidInvoices": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "paidInvoices": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "workersActive": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "workersInactive": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "managers": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "caretakers": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ReportModel": {
+        "type": "object",
+        "properties": {
+          "totalProperties": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "totalUsers": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "totalWorkers": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "adminWorkers": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "managerWorkers": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "caretakerWorkers": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "activeLeases": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "inactiveLeases": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "aiEscalationsActive": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "aiEscalationsResolved": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "propertySummaries": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PropertySummary"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TenantDashboardModel": {
+        "type": "object",
+        "properties": {
+          "latestInvoiceStatus": {
+            "type": "string",
+            "nullable": true
+          },
+          "latestInvoiceDueDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "latestInvoiceAmount": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "activeMaintenanceCount": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
       "UnitModel": {
         "type": "object",
         "properties": {
@@ -1535,6 +2294,36 @@
           },
           "unitNumber": {
             "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateUnitAndLeaseModel": {
+        "type": "object",
+        "properties": {
+          "rentAmount": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "tenantID": {
+            "type": "string",
+            "nullable": true
+          },
+          "deposit": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "startDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "endDate": {
+            "type": "string",
+            "format": "date-time",
             "nullable": true
           }
         },

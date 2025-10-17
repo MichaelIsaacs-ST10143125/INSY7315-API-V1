@@ -8,6 +8,9 @@ namespace NewDawnPropertiesApi_V1.Models
         [FirestoreDocumentId]
         public string? Id { get; set; }
 
+        [FirestoreProperty("chatID")]
+        public string? ChatID { get; set; }
+
         [FirestoreProperty("createdAt")]
         public DateTime? CreatedAt { get; set; }
 
