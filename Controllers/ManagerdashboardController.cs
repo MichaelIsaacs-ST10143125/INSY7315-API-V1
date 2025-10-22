@@ -38,8 +38,8 @@ namespace NewDawnPropertiesApi_V1.Controllers
                     .Collection("Workers-Stationed")
                     .Document(uid)
                     .GetSnapshotAsync();
-                string stationedPropertyID = workerStation.ContainsField("Station")
-                    ? workerStation.GetValue<string>("Station")
+                string stationedPropertyID = workerStation.ContainsField("Stationed")
+                    ? workerStation.GetValue<string>("Stationed")
                     : string.Empty;
 
 

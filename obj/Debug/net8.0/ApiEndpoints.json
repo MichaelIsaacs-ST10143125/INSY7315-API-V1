@@ -585,39 +585,24 @@
   },
   {
     "ContainingType": "NewDawnPropertiesApi_V1.Controllers.MessagesController",
-    "Method": "GetChatLog",
-    "RelativePath": "api/Messages/messages/mobile/{uid}/{receiverEmail}",
-    "HttpMethod": "GET",
+    "Method": "AddMessage",
+    "RelativePath": "api/Messages/add",
+    "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "uid",
-        "Type": "System.String",
-        "IsRequired": true
-      },
-      {
-        "Name": "receiverEmail",
-        "Type": "System.String",
+        "Name": "request",
+        "Type": "NewDawnPropertiesApi_V1.AppModels.AddMessageModel",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "NewDawnPropertiesApi_V1.Controllers.MessagesController",
-    "Method": "Getusers",
-    "RelativePath": "api/Messages/users/mobile/{uid}",
+    "Method": "GetAllUsersMessages",
+    "RelativePath": "api/Messages/get/all/users/messages/{uid}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -630,7 +615,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[NewDawnPropertiesApi_V1.Models.MessageModel, NewDawnPropertiesApi-V1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -691,6 +676,27 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "NewDawnPropertiesApi_V1.Controllers.ProfileController",
+    "Method": "UpdateUser",
+    "RelativePath": "api/Profile/user/update/preferences/{uid}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "uid",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "model",
+        "Type": "NewDawnPropertiesApi_V1.AppModels.ProfileUpdateModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "NewDawnPropertiesApi_V1.Controllers.BaseFirestoreController\u00601[[NewDawnPropertiesApi_V1.Models.PropertyModel, NewDawnPropertiesApi-V1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",

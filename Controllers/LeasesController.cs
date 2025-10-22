@@ -37,7 +37,7 @@ namespace NewDawnPropertiesApi_V1.Controllers
                 .Document(uid)
                 .GetSnapshotAsync();
 
-            string stationedPropertyID = workerStation.GetValue<string>("Station");
+            string stationedPropertyID = workerStation.GetValue<string>("Stationed");
 
             // Query leases for this tenant
             var query = _firestore.Collection("leases")
@@ -50,6 +50,8 @@ namespace NewDawnPropertiesApi_V1.Controllers
             {
                 LeaseID = d.Id,
                 PropertyID = d.GetValue<string>("propertyID"),
+                UnitID = d.GetValue<string>("unitID"),  
+                TenantID = d.GetValue<string>("tenantID"),
                 StartDate = d.ContainsField("startDate")
                     ? d.GetValue<DateTime?>("startDate")
                     : null,

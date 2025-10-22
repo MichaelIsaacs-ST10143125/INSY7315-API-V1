@@ -58,5 +58,46 @@ namespace NewDawnPropertiesApi_V1.Controllers
                 return StatusCode(500, $"Internal server error: {ex.Message}");
             }
         }
+
+        [HttpPut("user/update/preferences/{uid}")]
+        public async Task<ActionResult> UpdateUser(string uid, [FromBody] ProfileUpdateModel model)
+        {
+            try
+            {
+                var userDocRef = _firestore.Collection("users").Document(uid);
+                var userSnapshot = await userDocRef.GetSnapshotAsync();
+
+                if (!userSnapshot.Exists)
+                    return NotFound($"User with UID '{uid}' not found.");
+
+                var updates = new Dictionary<FieldPath, object>();
+
+                // Correctly update nested preferences fields using FieldPath
+                if (model.theme != null)
+                    updates[new FieldPath("preferences", "theme")] = model.theme;
+
+                if (model.language != null)
+                    updates[new FieldPath("preferences", "language")] = model.language;
+
+                // If property and unit are both provided, concatenate them
+                if (!string.IsNullOrEmpty(model.property) && !string.IsNullOrEmpty(model.unit))
+                    updates[new FieldPath("located")] = $"{model.property} {model.unit}";
+
+                if (updates.Count == 0)
+                    return BadRequest("No fields provided for update.");
+
+                // Apply the updates
+                await userDocRef.UpdateAsync(updates);
+
+                return Ok(new { message = "User profile updated successfully." });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
+
+
+
     }
 }
