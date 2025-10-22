@@ -34,7 +34,7 @@ namespace NewDawnPropertiesApi_V1.Controllers
                 var escalations = escalationQuery.Documents
                     .Select(d => new AiEscalationsModel
                     {
-                        id = "ID of the document",
+                        id = d.Id,
                         chatID = d.GetValue<string>("chatID"),
                         reason = d.GetValue<string>("escalationReason"),
                         issue = d.GetValue<string>("issue"),

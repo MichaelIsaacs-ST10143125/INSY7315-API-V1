@@ -50,8 +50,8 @@ namespace NewDawnPropertiesApi_V1.Controllers
                     .Document(uid)
                     .GetSnapshotAsync();
 
-                string stationedPropertyID = workerStation.ContainsField("Station")
-                    ? workerStation.GetValue<string>("Station")
+                string stationedPropertyID = workerStation.ContainsField("Stationed")
+                    ? workerStation.GetValue<string>("Stationed")
                     : string.Empty;
 
                 // Optional: fallback to userDoc.propertyID if needed
@@ -92,6 +92,7 @@ namespace NewDawnPropertiesApi_V1.Controllers
                 {
                     return new
                     {
+                        ID = d.Id,
                         Unit = d.GetValue<string>("unitID"),
                         Status = d.GetValue<string>("status"),
                         FixDate = d.ContainsField("fixedAt") ? d.GetValue<DateTime?>("fixedAt") : null,
@@ -134,7 +135,7 @@ namespace NewDawnPropertiesApi_V1.Controllers
                 ? userDoc.GetValue<string>("located")
                 : string.Empty;
 
-            if (string.IsNullOrEmpty(located) || !located.Contains(" "))
+            if (string.IsNullOrEmpty(located))
                 return BadRequest("User's located field is missing or invalid.");
 
             // Split located field into propertyID and unitID
