@@ -799,6 +799,32 @@
   },
   {
     "ContainingType": "NewDawnPropertiesApi_V1.Controllers.PropertiesController",
+    "Method": "UpdateUnitAvailability",
+    "RelativePath": "api/Properties/manager/update/unit/{propertyId}/{unitId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "propertyId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "unitId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "updateModel",
+        "Type": "NewDawnPropertiesApi_V1.AppModels.UpdatePropertyListing",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NewDawnPropertiesApi_V1.Controllers.PropertiesController",
     "Method": "GetAllPropertyUnits",
     "RelativePath": "api/Properties/user/mobile/manager",
     "HttpMethod": "GET",
