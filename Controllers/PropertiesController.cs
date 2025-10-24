@@ -34,7 +34,8 @@ namespace NewDawnPropertiesApi_V1.Controllers
                 var propertyName = propertyData.ContainsKey("name") ? propertyData["name"]?.ToString() : null;
                 var propertyAddress = propertyData.ContainsKey("address") ? propertyData["address"]?.ToString() : null;
                 var amenities = propertyData.ContainsKey("amenities")
-                    ? ((List<object>)propertyData["amenities"]).Select(a => a.ToString()).ToArray()
+                    ? ((List<object>)propertyData["amenities"]).Select(a => a.ToString() ?? string.Empty)
+                    .ToArray()
                     : Array.Empty<string>();
 
                 // Get units subcollection
@@ -79,7 +80,7 @@ namespace NewDawnPropertiesApi_V1.Controllers
                 var propertyName = propertyData.ContainsKey("name") ? propertyData["name"]?.ToString() : null;
                 var propertyAddress = propertyData.ContainsKey("address") ? propertyData["address"]?.ToString() : null;
                 var amenities = propertyData.ContainsKey("amenities")
-                    ? ((List<object>)propertyData["amenities"]).Select(a => a.ToString()).ToArray()
+                    ? ((List<object>)propertyData["amenities"]).Select(a => a.ToString() ?? string.Empty).ToArray()
                     : Array.Empty<string>();
 
                 // Get units subcollection

@@ -2,7 +2,7 @@
 {
     public class UpdatePropertyListing
     {
-        public List<String> ammenties { get; set; }
+        public List<String>? ammenties { get; set; }
         public Boolean isAvailable { get; set; }
     }
 }

@@ -111,7 +111,7 @@ namespace NewDawnPropertiesApi_V1.Controllers
                 }
                 else
                 {
-                    return null;
+                    return new object();
                 }
             }).Where(r => r != null).ToList();
 
