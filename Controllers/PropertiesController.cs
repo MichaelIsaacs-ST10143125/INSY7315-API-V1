@@ -110,5 +110,26 @@ namespace NewDawnPropertiesApi_V1.Controllers
             return Ok(result);
         }
 
+        [HttpPut("manager/update/unit/{propertyId}/{unitId}")]
+        public async Task<ActionResult> UpdateUnitAvailability(string propertyId, string unitId, [FromBody] UpdatePropertyListing updateModel)
+        {
+            if (updateModel == null)
+                return BadRequest("Update data is required.");
+
+            var propertyDocRef = _firestore.Collection("properties").Document(propertyId);
+            var unitDocRef = propertyDocRef.Collection("units").Document(unitId);
+
+            var unitSnapshot = await unitDocRef.GetSnapshotAsync();
+            if (!unitSnapshot.Exists)
+                return NotFound($"Unit with ID '{unitId}' not found in property '{propertyId}'.");
+
+            var updates = new Dictionary<string, object>
+            {
+                { "isAvailable", updateModel.isAvailable }
+            };
+            await unitDocRef.UpdateAsync(updates);
+            return Ok("Unit availability updated successfully.");
+        }
+
     }
 }

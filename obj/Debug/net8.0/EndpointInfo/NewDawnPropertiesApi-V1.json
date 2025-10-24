@@ -1214,6 +1214,55 @@
         }
       }
     },
+    "/api/Properties/manager/update/unit/{propertyId}/{unitId}": {
+      "put": {
+        "tags": [
+          "Properties"
+        ],
+        "parameters": [
+          {
+            "name": "propertyId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "unitId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdatePropertyListing"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdatePropertyListing"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdatePropertyListing"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Properties": {
       "get": {
         "tags": [
@@ -2394,6 +2443,22 @@
           "unitNumber": {
             "type": "string",
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdatePropertyListing": {
+        "type": "object",
+        "properties": {
+          "ammenties": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "isAvailable": {
+            "type": "boolean"
           }
         },
         "additionalProperties": false
