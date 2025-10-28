@@ -3,6 +3,34 @@
   "WorkspaceRootPath": "C:\\Users\\jarry\\source\\repos\\INSY7315 API\\INSY7315-API-V1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|c:\\users\\jarry\\source\\repos\\insy7315 api\\insy7315-api-v1\\controllers\\messagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|solutionrelative:controllers\\messagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|c:\\users\\jarry\\source\\repos\\insy7315 api\\insy7315-api-v1\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|c:\\users\\jarry\\source\\repos\\insy7315 api\\insy7315-api-v1\\appmodels\\usersmessagemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|solutionrelative:appmodels\\usersmessagemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|c:\\users\\jarry\\source\\repos\\insy7315 api\\insy7315-api-v1\\services\\firestoreservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|solutionrelative:services\\firestoreservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|c:\\users\\jarry\\source\\repos\\insy7315 api\\insy7315-api-v1\\controllers\\maintenancerequestscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|solutionrelative:controllers\\maintenancerequestscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|c:\\users\\jarry\\source\\repos\\insy7315 api\\insy7315-api-v1\\controllers\\aiescalationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|solutionrelative:controllers\\aiescalationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|c:\\users\\jarry\\source\\repos\\insy7315 api\\insy7315-api-v1\\controllers\\tenantdashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|solutionrelative:controllers\\tenantdashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|c:\\users\\jarry\\source\\repos\\insy7315 api\\insy7315-api-v1\\controllers\\propertiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|solutionrelative:controllers\\propertiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,20 +39,8 @@
       "RelativeMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|solutionrelative:appmodels\\profileupdatemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|c:\\users\\jarry\\source\\repos\\insy7315 api\\insy7315-api-v1\\services\\firestoreservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|solutionrelative:services\\firestoreservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|c:\\users\\jarry\\source\\repos\\insy7315 api\\insy7315-api-v1\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|c:\\users\\jarry\\source\\repos\\insy7315 api\\insy7315-api-v1\\controllers\\unitscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|solutionrelative:controllers\\unitscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|c:\\users\\jarry\\source\\repos\\insy7315 api\\insy7315-api-v1\\controllers\\tenantdashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|solutionrelative:controllers\\tenantdashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|c:\\users\\jarry\\source\\repos\\insy7315 api\\insy7315-api-v1\\controllers\\reportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,16 +51,8 @@
       "RelativeMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|solutionrelative:controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|c:\\users\\jarry\\source\\repos\\insy7315 api\\insy7315-api-v1\\controllers\\messagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|solutionrelative:controllers\\messagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|c:\\users\\jarry\\source\\repos\\insy7315 api\\insy7315-api-v1\\controllers\\managerdashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|solutionrelative:controllers\\managerdashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|c:\\users\\jarry\\source\\repos\\insy7315 api\\insy7315-api-v1\\controllers\\maintenancerequestscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|solutionrelative:controllers\\maintenancerequestscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|c:\\users\\jarry\\source\\repos\\insy7315 api\\insy7315-api-v1\\controllers\\leasescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -63,16 +71,8 @@
       "RelativeMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|solutionrelative:controllers\\applicationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|c:\\users\\jarry\\source\\repos\\insy7315 api\\insy7315-api-v1\\controllers\\aiescalationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|solutionrelative:controllers\\aiescalationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|c:\\users\\jarry\\source\\repos\\insy7315 api\\insy7315-api-v1\\controllers\\admindashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|solutionrelative:controllers\\admindashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|c:\\users\\jarry\\source\\repos\\insy7315 api\\insy7315-api-v1\\appmodels\\usersmessagemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|solutionrelative:appmodels\\usersmessagemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{12AAD5BA-9C47-4BAE-B200-878307DDAF03}|NewDawnPropertiesApi-V1.csproj|c:\\users\\jarry\\source\\repos\\insy7315 api\\insy7315-api-v1\\appmodels\\updateunitandleasemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -134,7 +134,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 34,
+          "SelectedChildIndex": 36,
           "Children": [
             {
               "$type": "Bookmark",
@@ -174,20 +174,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "FirestoreService.cs",
               "DocumentMoniker": "C:\\Users\\jarry\\source\\repos\\INSY7315 API\\INSY7315-API-V1\\Services\\FirestoreService.cs",
               "RelativeDocumentMoniker": "Services\\FirestoreService.cs",
               "ToolTip": "C:\\Users\\jarry\\source\\repos\\INSY7315 API\\INSY7315-API-V1\\Services\\FirestoreService.cs",
               "RelativeToolTip": "Services\\FirestoreService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-24T13:25:29.509Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "BaseFirestoreController.cs",
               "DocumentMoniker": "C:\\Users\\jarry\\source\\repos\\INSY7315 API\\INSY7315-API-V1\\Controllers\\BaseFirestoreController.cs",
               "RelativeDocumentMoniker": "Controllers\\BaseFirestoreController.cs",
@@ -195,12 +195,11 @@
               "RelativeToolTip": "Controllers\\BaseFirestoreController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T13:24:15.913Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-24T13:24:15.913Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "ApplicationsController.cs",
               "DocumentMoniker": "C:\\Users\\jarry\\source\\repos\\INSY7315 API\\INSY7315-API-V1\\Controllers\\ApplicationsController.cs",
               "RelativeDocumentMoniker": "Controllers\\ApplicationsController.cs",
@@ -208,25 +207,23 @@
               "RelativeToolTip": "Controllers\\ApplicationsController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T13:24:12.084Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-24T13:24:12.084Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 5,
               "Title": "AiEscalationController.cs",
               "DocumentMoniker": "C:\\Users\\jarry\\source\\repos\\INSY7315 API\\INSY7315-API-V1\\Controllers\\AiEscalationController.cs",
               "RelativeDocumentMoniker": "Controllers\\AiEscalationController.cs",
               "ToolTip": "C:\\Users\\jarry\\source\\repos\\INSY7315 API\\INSY7315-API-V1\\Controllers\\AiEscalationController.cs",
               "RelativeToolTip": "Controllers\\AiEscalationController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwCQAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T13:24:04.048Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-24T13:24:04.048Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "AdminDashboardController.cs",
               "DocumentMoniker": "C:\\Users\\jarry\\source\\repos\\INSY7315 API\\INSY7315-API-V1\\Controllers\\AdminDashboardController.cs",
               "RelativeDocumentMoniker": "Controllers\\AdminDashboardController.cs",
@@ -234,18 +231,17 @@
               "RelativeToolTip": "Controllers\\AdminDashboardController.cs",
               "ViewState": "AgIAAE4AAAAAAAAAAAAYwAcAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T13:23:58.21Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-24T13:23:58.21Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 2,
               "Title": "UsersMessageModel.cs",
               "DocumentMoniker": "C:\\Users\\jarry\\source\\repos\\INSY7315 API\\INSY7315-API-V1\\AppModels\\UsersMessageModel.cs",
               "RelativeDocumentMoniker": "AppModels\\UsersMessageModel.cs",
               "ToolTip": "C:\\Users\\jarry\\source\\repos\\INSY7315 API\\INSY7315-API-V1\\AppModels\\UsersMessageModel.cs",
               "RelativeToolTip": "AppModels\\UsersMessageModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-24T13:23:55.5Z",
               "EditorCaption": ""
@@ -260,8 +256,7 @@
               "RelativeToolTip": "AppModels\\UpdateUnitAndLeaseModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T13:23:52.824Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-24T13:23:52.824Z"
             },
             {
               "$type": "Document",
@@ -273,12 +268,11 @@
               "RelativeToolTip": "AppModels\\TenantDashboardModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T13:23:47.325Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-24T13:23:47.325Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "ProfileUpdateModel.cs",
               "DocumentMoniker": "C:\\Users\\jarry\\source\\repos\\INSY7315 API\\INSY7315-API-V1\\AppModels\\ProfileUpdateModel.cs",
               "RelativeDocumentMoniker": "AppModels\\ProfileUpdateModel.cs",
@@ -286,8 +280,7 @@
               "RelativeToolTip": "AppModels\\ProfileUpdateModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T13:23:42.733Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-24T13:23:42.733Z"
             },
             {
               "$type": "Document",
@@ -299,8 +292,7 @@
               "RelativeToolTip": "AppModels\\ProfileModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T13:23:41.571Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-24T13:23:41.571Z"
             },
             {
               "$type": "Document",
@@ -312,8 +304,7 @@
               "RelativeToolTip": "AppModels\\ManagerDashboardModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T13:23:38.671Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-24T13:23:38.671Z"
             },
             {
               "$type": "Document",
@@ -325,8 +316,7 @@
               "RelativeToolTip": "AppModels\\CreateMaintenanceRequestModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T13:23:30.073Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-24T13:23:30.073Z"
             },
             {
               "$type": "Document",
@@ -338,8 +328,7 @@
               "RelativeToolTip": "AppModels\\AiEscalationsModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T13:23:28.427Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-24T13:23:28.427Z"
             },
             {
               "$type": "Document",
@@ -351,8 +340,7 @@
               "RelativeToolTip": "AppModels\\AdminUserModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T13:23:27.357Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-24T13:23:27.357Z"
             },
             {
               "$type": "Document",
@@ -364,8 +352,7 @@
               "RelativeToolTip": "AppModels\\AdminDashboardModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T13:23:25.413Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-24T13:23:25.413Z"
             },
             {
               "$type": "Document",
@@ -377,8 +364,7 @@
               "RelativeToolTip": "AppModels\\AddMessageModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T13:23:24.389Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-24T13:23:24.389Z"
             },
             {
               "$type": "Document",
@@ -390,8 +376,7 @@
               "RelativeToolTip": "AppModels\\AddInvoiceModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T13:23:22.708Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-24T13:23:22.708Z"
             },
             {
               "$type": "Document",
@@ -403,18 +388,17 @@
               "RelativeToolTip": "AppModels\\PropertyMobileModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T13:15:53.133Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-24T13:15:53.133Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 4,
               "Title": "MaintenanceRequestsController.cs",
               "DocumentMoniker": "C:\\Users\\jarry\\source\\repos\\INSY7315 API\\INSY7315-API-V1\\Controllers\\MaintenanceRequestsController.cs",
               "RelativeDocumentMoniker": "Controllers\\MaintenanceRequestsController.cs",
               "ToolTip": "C:\\Users\\jarry\\source\\repos\\INSY7315 API\\INSY7315-API-V1\\Controllers\\MaintenanceRequestsController.cs",
               "RelativeToolTip": "Controllers\\MaintenanceRequestsController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwB8AAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAYwLMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-24T13:12:56.83Z",
               "EditorCaption": ""
@@ -429,25 +413,24 @@
               "RelativeToolTip": "AppModels\\ReportModel.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAA3wCkAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T13:12:22.717Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-24T13:12:22.717Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "UsersController.cs",
               "DocumentMoniker": "C:\\Users\\jarry\\source\\repos\\INSY7315 API\\INSY7315-API-V1\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
               "ToolTip": "C:\\Users\\jarry\\source\\repos\\INSY7315 API\\INSY7315-API-V1\\Controllers\\UsersController.cs",
               "RelativeToolTip": "Controllers\\UsersController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwDUAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-23T15:13:33.441Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "UnitsController.cs",
               "DocumentMoniker": "C:\\Users\\jarry\\source\\repos\\INSY7315 API\\INSY7315-API-V1\\Controllers\\UnitsController.cs",
               "RelativeDocumentMoniker": "Controllers\\UnitsController.cs",
@@ -455,12 +438,11 @@
               "RelativeToolTip": "Controllers\\UnitsController.cs",
               "ViewState": "AgIAAHMAAAAAAAAAAAAgwKYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T15:08:07.433Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-23T15:08:07.433Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "ReportController.cs",
               "DocumentMoniker": "C:\\Users\\jarry\\source\\repos\\INSY7315 API\\INSY7315-API-V1\\Controllers\\ReportController.cs",
               "RelativeDocumentMoniker": "Controllers\\ReportController.cs",
@@ -468,21 +450,19 @@
               "RelativeToolTip": "Controllers\\ReportController.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAAwK0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T15:07:13.261Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-23T15:07:13.261Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "TenantDashboardController.cs",
               "DocumentMoniker": "C:\\Users\\jarry\\source\\repos\\INSY7315 API\\INSY7315-API-V1\\Controllers\\TenantDashboardController.cs",
               "RelativeDocumentMoniker": "Controllers\\TenantDashboardController.cs",
               "ToolTip": "C:\\Users\\jarry\\source\\repos\\INSY7315 API\\INSY7315-API-V1\\Controllers\\TenantDashboardController.cs",
               "RelativeToolTip": "Controllers\\TenantDashboardController.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAgwE4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAgwEUAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T15:02:29.387Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-23T15:02:29.387Z"
             },
             {
               "$type": "Document",
@@ -494,25 +474,23 @@
               "RelativeToolTip": "AppModels\\UpdatePropertyListing.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T14:16:57.962Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-23T14:16:57.962Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "PropertiesController.cs",
               "DocumentMoniker": "C:\\Users\\jarry\\source\\repos\\INSY7315 API\\INSY7315-API-V1\\Controllers\\PropertiesController.cs",
               "RelativeDocumentMoniker": "Controllers\\PropertiesController.cs",
               "ToolTip": "C:\\Users\\jarry\\source\\repos\\INSY7315 API\\INSY7315-API-V1\\Controllers\\PropertiesController.cs",
               "RelativeToolTip": "Controllers\\PropertiesController.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAqwC8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAqwC8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T14:13:20.476Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-23T14:13:20.476Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "ProfileController.cs",
               "DocumentMoniker": "C:\\Users\\jarry\\source\\repos\\INSY7315 API\\INSY7315-API-V1\\Controllers\\ProfileController.cs",
               "RelativeDocumentMoniker": "Controllers\\ProfileController.cs",
@@ -520,25 +498,24 @@
               "RelativeToolTip": "Controllers\\ProfileController.cs",
               "ViewState": "AgIAAD8AAAAAAAAAAAAYwGEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T14:04:01.088Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-23T14:04:01.088Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
               "Title": "MessagesController.cs",
               "DocumentMoniker": "C:\\Users\\jarry\\source\\repos\\INSY7315 API\\INSY7315-API-V1\\Controllers\\MessagesController.cs",
               "RelativeDocumentMoniker": "Controllers\\MessagesController.cs",
               "ToolTip": "C:\\Users\\jarry\\source\\repos\\INSY7315 API\\INSY7315-API-V1\\Controllers\\MessagesController.cs",
               "RelativeToolTip": "Controllers\\MessagesController.cs",
-              "ViewState": "AgIAAF4AAAAAAAAAAAAQwCUAAABHAAAAAAAAAA==",
+              "ViewState": "AgIAAI0AAAAAAAAAAAAYwKoAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-23T13:50:36.867Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "ManagerdashboardController.cs",
               "DocumentMoniker": "C:\\Users\\jarry\\source\\repos\\INSY7315 API\\INSY7315-API-V1\\Controllers\\ManagerdashboardController.cs",
               "RelativeDocumentMoniker": "Controllers\\ManagerdashboardController.cs",
@@ -546,12 +523,11 @@
               "RelativeToolTip": "Controllers\\ManagerdashboardController.cs",
               "ViewState": "AgIAAHkAAAAAAAAAAAAgwKwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T13:25:19.841Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-23T13:25:19.841Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "LeasesController.cs",
               "DocumentMoniker": "C:\\Users\\jarry\\source\\repos\\INSY7315 API\\INSY7315-API-V1\\Controllers\\LeasesController.cs",
               "RelativeDocumentMoniker": "Controllers\\LeasesController.cs",
@@ -559,12 +535,11 @@
               "RelativeToolTip": "Controllers\\LeasesController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T13:38:40.142Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-23T13:38:40.142Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "InvoicesController.cs",
               "DocumentMoniker": "C:\\Users\\jarry\\source\\repos\\INSY7315 API\\INSY7315-API-V1\\Controllers\\InvoicesController.cs",
               "RelativeDocumentMoniker": "Controllers\\InvoicesController.cs",
@@ -572,8 +547,7 @@
               "RelativeToolTip": "Controllers\\InvoicesController.cs",
               "ViewState": "AgIAAFMAAAAAAAAAAAAIwEcAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T13:27:46.89Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-23T13:27:46.89Z"
             }
           ]
         }

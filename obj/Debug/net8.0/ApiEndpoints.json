@@ -1107,5 +1107,31 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "NewDawnPropertiesApi_V1.Controllers.UsersController",
+    "Method": "GetUserList",
+    "RelativePath": "api/Users/mobile/user/list/{uid}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "uid",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[NewDawnPropertiesApi_V1.AppModels.UsersMessageModel, NewDawnPropertiesApi-V1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]
