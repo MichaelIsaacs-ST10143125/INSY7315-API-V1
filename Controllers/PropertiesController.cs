@@ -111,6 +111,66 @@ namespace NewDawnPropertiesApi_V1.Controllers
             return Ok(result);
         }
 
+        [HttpGet("manager/mobile/units/{uid}")]
+        public async Task<ActionResult<IEnumerable<PropertyMobileModel>>> GetAllPropertyUnitsForManager(string uid)
+        {
+            // Step 1: Verify user exists and is a Manager
+            var userDoc = await _firestore.Collection("users").Document(uid).GetSnapshotAsync();
+            if (!userDoc.Exists)
+                return NotFound($"User with UID '{uid}' not found.");
+
+            var role = userDoc.GetValue<string>("userType");
+            if (role != "Manager")
+                return Forbid("Only managers can access this endpoint.");
+
+            // Step 2: Get manager’s stationed property
+            var stationedDoc = await _firestore.Collection("Workers-Stationed").Document(uid).GetSnapshotAsync();
+            if (!stationedDoc.Exists)
+                return NotFound($"Worker station for UID '{uid}' not found.");
+
+            var stationedPropertyID = stationedDoc.GetValue<string>("Stationed");
+
+            // Step 3: Get property document
+            var propertyDocRef = _firestore.Collection("properties").Document(stationedPropertyID);
+            var propertySnapshot = await propertyDocRef.GetSnapshotAsync();
+
+            if (!propertySnapshot.Exists)
+                return NotFound($"Property '{stationedPropertyID}' not found.");
+
+            // Extract property-level fields
+            var propertyData = propertySnapshot.ToDictionary();
+            var propertyName = propertyData.ContainsKey("name") ? propertyData["name"]?.ToString() : null;
+            var propertyAddress = propertyData.ContainsKey("address") ? propertyData["address"]?.ToString() : null;
+            var amenities = propertyData.ContainsKey("amenities")
+                ? ((List<object>)propertyData["amenities"]).Select(a => a.ToString()).ToArray()
+                : Array.Empty<string>();
+
+            // Step 4: Get all units under the property
+            var unitsSnapshot = await propertyDocRef.Collection("units").GetSnapshotAsync();
+
+            var result = new List<PropertyMobileModel>();
+            foreach (var unitDoc in unitsSnapshot.Documents)
+            {
+                if (!unitDoc.Exists) continue;
+
+                var unitData = unitDoc.ToDictionary();
+                var unitNumber = unitData.ContainsKey("unitNumber") ? unitData["unitNumber"]?.ToString() : null;
+                var isAvailable = unitData.ContainsKey("isAvailable") ? Convert.ToBoolean(unitData["isAvailable"]) : (bool?)null;
+
+                // Step 5: Combine property + unit data into one model
+                result.Add(new PropertyMobileModel
+                {
+                    isAvailable = isAvailable,
+                    unitNumber = unitNumber,
+                    propertyName = propertyName,
+                    propertyAddress = propertyAddress,
+                    amenities = amenities
+                });
+            }
+
+            return Ok(result);
+        }
+
         [HttpPut("manager/update/unit/{propertyId}/{unitId}")]
         public async Task<ActionResult> UpdateUnitAvailability(string propertyId, string unitId, [FromBody] UpdatePropertyListing updateModel)
         {
