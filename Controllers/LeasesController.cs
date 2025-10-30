@@ -50,7 +50,8 @@ namespace NewDawnPropertiesApi_V1.Controllers
             {
                 LeaseID = d.Id,
                 PropertyID = d.GetValue<string>("propertyID"),
-                UnitID = d.GetValue<string>("unitID"),  
+                //UnitID = d.GetValue<string>("unitID"),  
+                UnitID = d.ContainsField("unitID") ? d.GetValue<string>("unitID") : null,
                 TenantID = d.GetValue<string>("tenantID"),
                 StartDate = d.ContainsField("startDate")
                     ? d.GetValue<DateTime?>("startDate")

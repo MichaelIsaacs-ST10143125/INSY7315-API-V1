@@ -50,12 +50,18 @@ namespace NewDawnPropertiesApi_V1.Controllers
         }
 
 
-        [HttpPut("add/tenant/mobile/{propertyId}/{unitId}")]
+        [HttpPut("add/tenant/mobile/{propertyName}/{unitId}")]
         public async Task<ActionResult> UpdateUnitAndLease(
-            string propertyId,
+            string propertyName,
             string unitId,
             [FromBody] UpdateUnitAndLeaseModel request)
         {
+            var propertyDoc = await _firestore.Collection("properties")
+                .WhereEqualTo("name", propertyName)
+                .GetSnapshotAsync();
+
+            var propertyId = propertyDoc.Documents[0].Id;
+
             var unitRef = _firestore
                 .Collection("properties")
                 .Document(propertyId)
@@ -107,11 +113,17 @@ namespace NewDawnPropertiesApi_V1.Controllers
             return NoContent();
         }
 
-        [HttpPut("remove/tenant/mobile/{propertyId}/{unitId}")]
+        [HttpPut("remove/tenant/mobile/{propertyName}/{unitId}")]
         public async Task<ActionResult> RemoveTenantUnitAndLease(
-            string propertyId,
+            string propertyName,
             string unitId)
         {
+            var propertyDoc = await _firestore.Collection("properties")
+                .WhereEqualTo("name", propertyName)
+                .GetSnapshotAsync();
+
+            var propertyId = propertyDoc.Documents[0].Id;
+
             var unitRef = _firestore
                 .Collection("properties")
                 .Document(propertyId)

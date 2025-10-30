@@ -168,6 +168,22 @@
   },
   {
     "ContainingType": "NewDawnPropertiesApi_V1.Controllers.MaintenanceRequestsController",
+    "Method": "UpdateRequestStatus",
+    "RelativePath": "api/all/MaintenanceRequests/update/status/mobile",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "NewDawnPropertiesApi_V1.AppModels.UpdateMaintenanceRequestModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NewDawnPropertiesApi_V1.Controllers.MaintenanceRequestsController",
     "Method": "GetUserRequests",
     "RelativePath": "api/all/MaintenanceRequests/user/mobile/{uid}",
     "HttpMethod": "GET",
@@ -286,6 +302,22 @@
       {
         "Name": "id",
         "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NewDawnPropertiesApi_V1.Controllers.ApplicationsController",
+    "Method": "AddApplication",
+    "RelativePath": "api/Applications/mobile/add/application",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "application",
+        "Type": "NewDawnPropertiesApi_V1.AppModels.AddApplicationModel",
         "IsRequired": true
       }
     ],
@@ -799,6 +831,32 @@
   },
   {
     "ContainingType": "NewDawnPropertiesApi_V1.Controllers.PropertiesController",
+    "Method": "GetAllPropertyUnitsForManager",
+    "RelativePath": "api/Properties/manager/mobile/units/{uid}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "uid",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[NewDawnPropertiesApi_V1.AppModels.PropertyMobileModel, NewDawnPropertiesApi-V1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NewDawnPropertiesApi_V1.Controllers.PropertiesController",
     "Method": "UpdateUnitAvailability",
     "RelativePath": "api/Properties/manager/update/unit/{propertyId}/{unitId}",
     "HttpMethod": "PUT",
@@ -939,13 +997,13 @@
   {
     "ContainingType": "NewDawnPropertiesApi_V1.Controllers.UnitsController",
     "Method": "UpdateUnitAndLease",
-    "RelativePath": "api/Units/add/tenant/mobile/{propertyId}/{unitId}",
+    "RelativePath": "api/Units/add/tenant/mobile/{propertyName}/{unitId}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "propertyId",
+        "Name": "propertyName",
         "Type": "System.String",
         "IsRequired": true
       },
@@ -965,13 +1023,13 @@
   {
     "ContainingType": "NewDawnPropertiesApi_V1.Controllers.UnitsController",
     "Method": "RemoveTenantUnitAndLease",
-    "RelativePath": "api/Units/remove/tenant/mobile/{propertyId}/{unitId}",
+    "RelativePath": "api/Units/remove/tenant/mobile/{propertyName}/{unitId}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "propertyId",
+        "Name": "propertyName",
         "Type": "System.String",
         "IsRequired": true
       },

@@ -41,6 +41,7 @@ namespace NewDawnPropertiesApi_V1.Controllers
             else if (role == "Caretaker")
             {
                 query = query.WhereEqualTo("assignedTo", userEmail);
+                query = query.WhereNotEqualTo("status", "Complete");
             }
             else if (role == "Manager")
             {
@@ -174,6 +175,44 @@ namespace NewDawnPropertiesApi_V1.Controllers
 
             return CreatedAtAction(nameof(Get), new { id = docRef.Id }, request);
         }
+
+
+
+        [HttpPut]
+        [Route("update/status/mobile")]
+        public async Task<ActionResult> UpdateRequestStatus([FromBody] UpdateMaintenanceRequestModel model)
+        {
+            if (model == null || string.IsNullOrEmpty(model.ID))
+                return BadRequest("Document ID is required.");
+
+            if (string.IsNullOrEmpty(model.Status))
+                return BadRequest("Status is required.");
+
+            var docRef = _firestore.Collection("maintenanceRequests").Document(model.ID);
+            var docSnapshot = await docRef.GetSnapshotAsync();
+
+            if (!docSnapshot.Exists)
+                return NotFound($"Maintenance request with ID '{model.ID}' not found.");
+
+            // Prepare the update fields
+            var updates = new Dictionary<string, object>
+    {
+        { "status", model.Status },
+        { "updatedAt", DateTime.UtcNow }
+    };
+
+            // If status changes to "Completed", also record a fixedAt timestamp
+            if (model.Status.Equals("Completed", StringComparison.OrdinalIgnoreCase))
+            {
+                updates["fixedAt"] = DateTime.UtcNow;
+            }
+
+            // Only update the provided fields, do not overwrite the document
+            await docRef.UpdateAsync(updates);
+
+            return NoContent();
+        }
+
 
     }
 }

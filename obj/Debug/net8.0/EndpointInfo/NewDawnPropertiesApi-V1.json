@@ -89,6 +89,37 @@
         }
       }
     },
+    "/api/Applications/mobile/add/application": {
+      "post": {
+        "tags": [
+          "Applications"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddApplicationModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddApplicationModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddApplicationModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Applications": {
       "get": {
         "tags": [
@@ -772,6 +803,37 @@
         }
       }
     },
+    "/api/all/MaintenanceRequests/update/status/mobile": {
+      "put": {
+        "tags": [
+          "MaintenanceRequests"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateMaintenanceRequestModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateMaintenanceRequestModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateMaintenanceRequestModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/all/MaintenanceRequests": {
       "get": {
         "tags": [
@@ -1214,6 +1276,54 @@
         }
       }
     },
+    "/api/Properties/manager/mobile/units/{uid}": {
+      "get": {
+        "tags": [
+          "Properties"
+        ],
+        "parameters": [
+          {
+            "name": "uid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PropertyMobileModel"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PropertyMobileModel"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PropertyMobileModel"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/Properties/manager/update/unit/{propertyId}/{unitId}": {
       "put": {
         "tags": [
@@ -1584,14 +1694,14 @@
         }
       }
     },
-    "/api/Units/add/tenant/mobile/{propertyId}/{unitId}": {
+    "/api/Units/add/tenant/mobile/{propertyName}/{unitId}": {
       "put": {
         "tags": [
           "Units"
         ],
         "parameters": [
           {
-            "name": "propertyId",
+            "name": "propertyName",
             "in": "path",
             "required": true,
             "schema": {
@@ -1633,14 +1743,14 @@
         }
       }
     },
-    "/api/Units/remove/tenant/mobile/{propertyId}/{unitId}": {
+    "/api/Units/remove/tenant/mobile/{propertyName}/{unitId}": {
       "put": {
         "tags": [
           "Units"
         ],
         "parameters": [
           {
-            "name": "propertyId",
+            "name": "propertyName",
             "in": "path",
             "required": true,
             "schema": {
@@ -1927,6 +2037,32 @@
   },
   "components": {
     "schemas": {
+      "AddApplicationModel": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "phone": {
+            "type": "string",
+            "nullable": true
+          },
+          "propertyName": {
+            "type": "string",
+            "nullable": true
+          },
+          "unitID": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "AddInvoiceModel": {
         "type": "object",
         "properties": {
@@ -2512,6 +2648,20 @@
             "nullable": true
           },
           "unitNumber": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateMaintenanceRequestModel": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
             "type": "string",
             "nullable": true
           }
