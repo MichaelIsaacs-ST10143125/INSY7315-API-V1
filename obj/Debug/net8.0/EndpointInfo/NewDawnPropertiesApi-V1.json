@@ -285,6 +285,18 @@
         }
       }
     },
+    "/api/Health": {
+      "get": {
+        "tags": [
+          "Health"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Invoices/user/mobile/{uid}": {
       "get": {
         "tags": [
@@ -558,6 +570,54 @@
                 "schema": {
                   "type": "array",
                   "items": { }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Leases/tenant/mobile/{uid}": {
+      "get": {
+        "tags": [
+          "Leases"
+        ],
+        "parameters": [
+          {
+            "name": "uid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/LeaseModel"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/LeaseModel"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/LeaseModel"
+                  }
                 }
               }
             }

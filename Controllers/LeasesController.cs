@@ -66,6 +66,36 @@ namespace NewDawnPropertiesApi_V1.Controllers
             return Ok(results);
         }
 
+        [HttpGet("tenant/mobile/{uid}")]
+        public async Task<ActionResult<IEnumerable<LeaseModel>>> GetTenantLeases(string uid)
+        {
+            // Get user document
+            var userDoc = await _firestore.Collection("users").Document(uid).GetSnapshotAsync();
+
+            if (!userDoc.Exists)
+                return NotFound($"User with UID '{uid}' not found.");
+
+            string userEmail = userDoc.GetValue<string>("email");
+
+            string role = userDoc.GetValue<string>("userType");
+
+            // Only tenants should see their leases
+            if (role != "Tenant")
+                return Forbid("Only tenants can view their leases.");
+
+            // Query leases for this tenant
+            var query = _firestore.Collection("leases")
+                .WhereEqualTo("tenantID", userEmail);
+
+            var snapshot = await query.GetSnapshotAsync();
+
+            var leases = snapshot.Documents
+                .Select(d => d.ConvertTo<LeaseModel>())
+                .ToList();
+
+            return Ok(leases);
+        }
+
     }
 }
 

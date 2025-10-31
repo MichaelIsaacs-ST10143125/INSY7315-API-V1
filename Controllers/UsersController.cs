@@ -77,24 +77,31 @@ namespace NewDawnPropertiesApi_V1.Controllers
             }
             else
             {
-                // Get users in the same complex
-                var sameComplexSnapshot = await _firestore.Collection("users")
-                    .WhereEqualTo("located", currentLocation)
-                    .GetSnapshotAsync();
+                // Get all users
+                var usersSnapshot = await _firestore.Collection("users").GetSnapshotAsync();
+
+                // Filter users in the same complex using "contains"
+                var sameComplexUsers = usersSnapshot.Documents
+                    .Where(d =>
+                        d.Id != uid && // exclude current user
+                        d.ContainsField("located") &&
+                        d.GetValue<string>("located").Contains(currentLocation))
+                    .ToList();
 
                 // Get admins separately
-                var adminsSnapshot = await _firestore.Collection("users")
-                    .WhereEqualTo("userType", "Admin")
-                    .GetSnapshotAsync();
+                var adminsSnapshot = usersSnapshot.Documents
+                    .Where(d => d.ContainsField("userType") && d.GetValue<string>("userType") == "Admin")
+                    .ToList();
 
-                // Combine lists and remove duplicates (based on user ID)
-                allUserDocs = sameComplexSnapshot.Documents
-                    .Concat(adminsSnapshot.Documents)
+                // Combine lists and remove duplicates based on user ID
+                allUserDocs = sameComplexUsers
+                    .Concat(adminsSnapshot)
                     .GroupBy(d => d.Id)
                     .Select(g => g.First())
                     .Where(d => d.Id != uid) // exclude current user
                     .ToList();
             }
+
 
             var userList = allUserDocs
                 .Select(d => new UsersMessageModel
