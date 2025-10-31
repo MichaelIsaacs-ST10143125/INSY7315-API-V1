@@ -22,18 +22,25 @@ namespace NewDawnPropertiesApi_V1.Models
         public string? Name { get; set; }
 
         [FirestoreProperty("located")]
-        public string? Located { get; set; }
+        public string? Located { get; set; } = "Birchleigh";
 
         [FirestoreProperty("status")]
-        public string? Status { get; set; }
+        public string? Status { get; set; } = "Active";
 
         [FirestoreProperty("userType")]
         public string? UserType { get; set; }
 
         [FirestoreProperty("preferences")]
-        public Dictionary<string, object>? Preferences { get; set; }
+        public Preferences preferences { get; set; } = new Preferences();
 
         [FirestoreProperty("createdAt")]
         public DateTime? CreatedAt { get; set; }
     }
+
+    public class Preferences
+{
+    public string language { get; set; } = "en";
+    public bool notifications { get; set; } = true;     
+    public string theme { get; set; } = "light";
+}
 }
